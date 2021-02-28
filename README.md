@@ -20,13 +20,13 @@ Modular config presets that can be mixed and matched!
 - `npm i -D @beequeue/eslint-plugin`
 - `yarn add -D @beequeue/eslint-plugin`
 
-```json
-// .eslintrc
-{
-  "root": true,
-  "extends": [
-    "plugin:@beequeue/base"
-    // Any other presets you need 
-  ]
+```js
+// .eslintrc.js
+module.exports = {
+  root: true,
+  extends: [
+    "plugin:@beequeue/base",
+    // Any other presets you need
+  ],
 }
 ```
