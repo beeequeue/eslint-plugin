@@ -38,6 +38,8 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         node: { tryExtensions: [".js", ".ts", ".tsx"] },
       },
       rules: {
+        /** Don't warn on implicit function returns */
+        "@typescript-eslint/explicit-module-boundary-types": "off",
         /** Require explanations for @ts-ignore:s */
         "@typescript-eslint/ban-ts-comment": [
           "error",
@@ -50,7 +52,25 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
           },
         ],
         /** Better naming convention rule */
-        "@typescript-eslint/naming-convention": "error",
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            selector: "default",
+            format: ["camelCase"],
+            leadingUnderscore: "allow",
+            trailingUnderscore: "allow",
+          },
+          {
+            selector: "variable",
+            format: ["camelCase", "UPPER_CASE", "PascalCase"],
+            leadingUnderscore: "allow",
+            trailingUnderscore: "allow",
+          },
+          {
+            selector: "typeLike",
+            format: ["PascalCase"],
+          },
+        ],
         /** Allow void before floating promises */
         "no-void": ["error", { allowAsStatement: true }],
 
@@ -77,6 +97,15 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         /* Disable checks that a well-configured TypeScript config does for you, but is not disabled by /recommended */
         "no-unused-expressions": "off",
         "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+      },
+    },
+    {
+      files: ["*.d.ts"],
+      rules: {
+        /** Type definition files need different rules than normal files */
+        "import/no-duplicates": "off",
+        "import/order": "off",
       },
     },
   ],

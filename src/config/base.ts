@@ -28,8 +28,8 @@ export const base: Linter.BaseConfig<ESLintRules> = {
 
     /** Enforce camelCase */
     camelcase: "error",
-    /** Always use === */
-    eqeqeq: "error",
+    /** Always use ===, unless checking for nullables */
+    eqeqeq: ["error", "always", { null: "ignore" }],
     /** Require using const and let */
     "no-var": "error",
     /** Require using object shorthands */
