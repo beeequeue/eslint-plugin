@@ -15,11 +15,7 @@
     "noUnusedParameters": true,
     "forceConsistentCasingInFileNames": true,
     "lib": ["esnext"],
-    "types": ["node"],
-    "baseUrl": "src/",
-    "paths": {
-      "@/*": ["./*"]
-    }
+    "types": ["node"]
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", "dist/**/*"]

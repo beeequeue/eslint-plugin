@@ -1,5 +1,5 @@
 {
-  "name": "@bq/eslint",
+  "name": "@bq/eslint-config",
   "version": "0.1.0",
   "description": "My opinionated ESLint config",
   "author": "BeeeQueue",
