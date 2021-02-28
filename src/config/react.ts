@@ -1,10 +1,55 @@
 import { Linter } from "eslint"
 import { ESLintRules } from "eslint/rules"
 
+import { getPackageVersion, isPackageInstalled } from "../utils/pkg"
+
+const reactVersion = getPackageVersion("react")!
+const isNextInstalled = isPackageInstalled("next")!
+
 export const react: Linter.BaseConfig<ESLintRules> = {
   extends: [
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
     /** Configures import plugin for JSX */
     "plugin:import/react",
     "prettier",
+  ],
+  settings: {
+    react: { version: "detect" },
+  },
+  overrides: [
+    {
+      files: ["*.jsx", "*.tsx"],
+      rules: {
+        /** Require boolean props to use `isXXX` or `hasXXX` naming */
+        "react/boolean-prop-naming": "error",
+        /** Require all props to be used */
+        "react/no-unused-prop-types": "error",
+        /** Require all state to be used */
+        "react/no-unused-state": "error",
+        /** Require new lines between JSX on same level */
+        "react/jsx-newline": "error",
+        /** Self-explanatory */
+        "react/default-props-match-prop-types": "error",
+        /** Require components to use arrow syntax, except if we need a named function to get a named component */
+        "react/function-component-definition": [
+          "error",
+          {
+            namedComponents: "arrow-function",
+            unnamedComponents: "function-expression",
+          },
+        ],
+        /** Require whitespace between adjacent JSX elements */
+        "react/no-adjacent-inline-elements": "error",
+
+        /** Disabled if we're using a version that supports excluding `React` import */
+        "react/react-in-jsx-scope":
+          reactVersion.includes("17") ||
+          reactVersion.includes("16.14") ||
+          isNextInstalled
+            ? "off"
+            : "error",
+      },
+    },
   ],
 }
