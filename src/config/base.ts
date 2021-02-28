@@ -2,6 +2,9 @@ import { Linter } from "eslint"
 import { ESLintRules } from "eslint/rules"
 
 export const base: Linter.BaseConfig<ESLintRules> = {
+  env: {
+    es6: true,
+  },
   extends: [
     /** ESLint's recommended rules */
     "eslint:recommended",
