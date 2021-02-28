@@ -17,7 +17,8 @@
     ]
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "yarn build --watch"
   },
   "peerDependencies": {
     "eslint": "^7.21.0"
