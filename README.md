@@ -26,7 +26,12 @@ module.exports = {
   root: true,
   extends: [
     "plugin:@beequeue/base",
+    
     // Any other presets you need
+    "plugin:@beequeue/typescript",
+    
+    // Add the prettier preset **at the end** if you use it
+    "plugin:@beequeue/prettier",
   ],
 }
 ```

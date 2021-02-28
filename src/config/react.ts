@@ -12,7 +12,6 @@ export const react: Linter.BaseConfig<ESLintRules> = {
     "plugin:jsx-a11y/recommended",
     /** Configures import plugin for JSX */
     "plugin:import/react",
-    "prettier",
   ],
   settings: {
     react: { version: "detect" },

@@ -5,7 +5,6 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
   extends: [
     /** Configures import plugin for TypeScript */
     "plugin:import/typescript",
-    "prettier",
   ],
   settings: {
     /**

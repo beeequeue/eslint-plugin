@@ -17,7 +17,6 @@ export const base: Linter.BaseConfig<ESLintRules> = {
     "plugin:import/errors",
     /** Adds import plugin, rule prohibiting deprecated imports */
     "plugin:import/stage-0",
-    "prettier",
   ],
   settings: {
     /** Mark @/** as internal packages */
