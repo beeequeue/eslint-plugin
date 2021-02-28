@@ -1,0 +1,9 @@
+{
+  "name": "@bq/eslint",
+  "version": "0.1.0",
+  "description": "My opinionated ESLint config",
+  "main": "index.js",
+  "author": "BeeeQueue",
+  "license": "MIT",
+  "private": false
+}
