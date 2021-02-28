@@ -21,7 +21,7 @@ export const base: Linter.BaseConfig<ESLintRules> = {
   ],
   settings: {
     /** Mark @/** as internal packages */
-    "import/internal-regex": "^@*/**/*",
+    "import/internal-regex": "^@.*?/.*?/.*",
   },
   rules: {
     /* ESLINT */
