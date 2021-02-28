@@ -29,7 +29,9 @@
     "@types/eslint": "7.2.6",
     "@types/node": "14.14.31",
     "eslint": "7.21.0",
+    "husky": "4.3.8",
     "lint-staged": "10.5.4",
+    "prettier": "2.2.1",
     "typescript": "4.1.5"
   }
 }
