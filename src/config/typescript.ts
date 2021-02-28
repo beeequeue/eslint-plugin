@@ -70,6 +70,10 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
             selector: "typeLike",
             format: ["PascalCase"],
           },
+          {
+            selector: "enumMember",
+            format: ["PascalCase"],
+          },
         ],
         /** Allow void before floating promises */
         "no-void": ["error", { allowAsStatement: true }],
