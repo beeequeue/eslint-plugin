@@ -5,5 +5,6 @@ export const react: Linter.BaseConfig<ESLintRules> = {
   extends: [
     /** Configures import plugin for JSX */
     "plugin:import/react",
+    "prettier",
   ],
 }

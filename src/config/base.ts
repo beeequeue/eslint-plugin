@@ -14,11 +14,7 @@ export const base: Linter.BaseConfig<ESLintRules> = {
     "plugin:import/errors",
     /** Adds import plugin, rule prohibiting deprecated imports */
     "plugin:import/stage-0",
-    /**
-     * Adds unicorn plugin, and their recommended rules
-     * https://github.com/sindresorhus/eslint-plugin-unicorn
-     */
-    "plugin:unicorn/recommended",
+    "prettier",
   ],
   settings: {
     /** Mark @/** as internal packages */

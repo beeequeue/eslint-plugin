@@ -2,9 +2,10 @@
   "name": "@bq/eslint",
   "version": "0.1.0",
   "description": "My opinionated ESLint config",
-  "main": "index.js",
   "author": "BeeeQueue",
   "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -22,7 +23,9 @@
     "eslint": "^7.21.0"
   },
   "dependencies": {
+    "eslint-config-prettier": "8.1.0",
     "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-prettier": "3.3.1",
     "eslint-plugin-unicorn": "28.0.2"
   },
   "devDependencies": {
