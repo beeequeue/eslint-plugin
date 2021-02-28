@@ -5,5 +5,26 @@
   "main": "index.js",
   "author": "BeeeQueue",
   "license": "MIT",
-  "private": false
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue,json,html,yml,yaml}": [
+      "yarn prettier --write"
+    ]
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/eslint": "7.2.6",
+    "@types/node": "14.14.31",
+    "@typescript-eslint/types": "4.15.2",
+    "eslint": "7.21.0",
+    "lint-staged": "10.5.4",
+    "pinst": "2.1.6",
+    "typescript": "4.1.5"
+  }
 }
