@@ -15,12 +15,58 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
      */
     "import/external-module-folders": ["node_modules", "node_modules/@types"],
   },
-  rules: {
-    /** Disable checks that a well-configured TypeScript config does for you */
-    "import/named": "off",
-    "import/namespace": "off",
-    "import/default": "off",
-    "import/export": "off",
-    "import/no-duplicated": "off",
-  },
+  overrides: [
+    {
+      files: ["*.ts", "*.tsx"],
+      extends: [
+        /** Adds typescript rules, typescript parser */
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+      ],
+      parserOptions: {
+        project: "./tsconfig.json",
+        tsconfigRootDir: "./",
+        warnOnUnsupportedTypeScriptVersion: false,
+      },
+      settings: {
+        /** Use TypeScript resolver so we can use `baseUrl` and `paths` */
+        "import/resolver": {
+          // {} is required for some reason, cant find a link to it anymore :(
+          typescript: {},
+        },
+        /** Configure node plugin to include TS files */
+        node: { tryExtensions: [".js", ".ts", ".tsx"] },
+      },
+      rules: {
+        /** Better naming convention rule */
+        "@typescript-eslint/naming-convention": "error",
+        /** Allow void before floating promises */
+        "no-void": ["error", { allowAsStatement: true }],
+
+        /* Overrides that add TS functionality */
+        "@typescript-eslint/no-shadow": "error",
+        "@typescript-eslint/no-loss-of-precision": "error",
+        "@typescript-eslint/no-useless-constructor": "error",
+
+        /* Disable duplicate/overridden rules */
+        camelcase: "off",
+        "no-shadow": "off",
+        "no-loss-of-precision": "off",
+        "no-useless-constructor": "off",
+        /** TS uses ESM */
+        "node/no-unsupported-features/es-syntax": "off",
+
+        "import/named": "off",
+        "import/namespace": "off",
+        "import/default": "off",
+        "import/export": "off",
+        "import/no-duplicated": "off",
+        "import/no-unresolved": "off",
+
+        /* Disable checks that a well-configured TypeScript config does for you, but is not disabled by /recommended */
+        "no-unused-expressions": "off",
+        "no-unused-vars": "off",
+      },
+    },
+  ],
 }
