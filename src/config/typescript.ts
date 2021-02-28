@@ -38,6 +38,17 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         node: { tryExtensions: [".js", ".ts", ".tsx"] },
       },
       rules: {
+        /** Require explanations for @ts-ignore:s */
+        "@typescript-eslint/ban-ts-comment": [
+          "error",
+          {
+            "ts-expect-error": false,
+            "ts-ignore": "allow-with-description",
+            "ts-check": true,
+            "ts-nocheck": true,
+            minimumDescriptionLength: 6,
+          },
+        ],
         /** Better naming convention rule */
         "@typescript-eslint/naming-convention": "error",
         /** Allow void before floating promises */
