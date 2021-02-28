@@ -271,9 +271,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bq/eslint-config@workspace:.":
+"@beequeue/eslint-plugin@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@bq/eslint-config@workspace:."
+  resolution: "@beequeue/eslint-plugin@workspace:."
   dependencies:
     "@types/eslint": 7.2.6
     "@types/node": 14.14.31

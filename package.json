@@ -1,11 +1,14 @@
 {
-  "name": "@bq/eslint-config",
-  "version": "0.1.0",
+  "name": "@beequeue/eslint-plugin",
+  "version": "0.0.1-beta.0",
   "description": "My opinionated ESLint config",
   "author": "BeeeQueue",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
