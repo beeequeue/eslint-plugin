@@ -77,6 +77,13 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
             format: ["PascalCase"],
           },
         ],
+        /** Require using `type` over `interface` */
+        "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+        /** Enforce using `x as type` over `<type>x` */
+        "@typescript-eslint/consistent-type-assertions": [
+          "error",
+          { assertionStyle: "as" },
+        ],
         /** Allow void before floating promises */
         "no-void": ["error", { allowAsStatement: true }],
 
