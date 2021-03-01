@@ -3,8 +3,8 @@ import { ESLintRules } from "eslint/rules"
 
 import { getPackageVersion, isPackageInstalled } from "../utils/pkg"
 
-const reactVersion = getPackageVersion("react")!
-const isNextInstalled = isPackageInstalled("next")!
+const reactVersion = getPackageVersion("react")
+const isNextInstalled = isPackageInstalled("next")
 
 export const react: Linter.BaseConfig<ESLintRules> = {
   extends: [
@@ -51,8 +51,8 @@ export const react: Linter.BaseConfig<ESLintRules> = {
 
         /** Disabled if we're using a version that supports excluding `React` import */
         "react/react-in-jsx-scope":
-          reactVersion.includes("17") ||
-          reactVersion.includes("16.14") ||
+          reactVersion?.includes("17") ||
+          reactVersion?.includes("16.14") ||
           isNextInstalled
             ? "off"
             : "error",
