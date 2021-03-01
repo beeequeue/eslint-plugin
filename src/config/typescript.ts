@@ -16,7 +16,7 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
   },
   overrides: [
     {
-      files: ["*.ts", "*.tsx"],
+      files: ["*.ts", "*.tsx", "*.vue"],
       extends: [
         /**
          * Adds typescript rules, typescript parser
@@ -104,6 +104,16 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         "no-unused-expressions": "off",
         "no-unused-vars": "off",
         "@typescript-eslint/no-unused-vars": "off",
+      },
+    },
+    {
+      files: ["*.vue"],
+      parser: "vue-eslint-parser",
+      parserOptions: {
+        parser: "@typescript-eslint/parser",
+        project: "./tsconfig.json",
+        tsconfigRootDir: "./",
+        warnOnUnsupportedTypeScriptVersion: false,
       },
     },
     {

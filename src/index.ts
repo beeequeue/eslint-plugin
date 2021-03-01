@@ -3,6 +3,7 @@ import { electron } from "./config/electron"
 import { prettier } from "./config/prettier"
 import { react } from "./config/react"
 import { typescript } from "./config/typescript"
+import { vue } from "./config/vue"
 
 export = {
   configs: {
@@ -11,5 +12,6 @@ export = {
     prettier,
     react,
     typescript,
+    vue,
   },
 }
