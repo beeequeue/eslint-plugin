@@ -18,7 +18,10 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
     {
       files: ["*.ts", "*.tsx"],
       extends: [
-        /** Adds typescript rules, typescript parser */
+        /**
+         * Adds typescript rules, typescript parser
+         * https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin
+         */
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
       ],

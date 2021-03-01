@@ -8,7 +8,15 @@ const isNextInstalled = isPackageInstalled("next")!
 
 export const react: Linter.BaseConfig<ESLintRules> = {
   extends: [
+    /**
+     * Configures JSX settings, adds react rules
+     * https://github.com/yannickcr/eslint-plugin-react
+     */
     "plugin:react/recommended",
+    /**
+     * Adds rules for accessibility (a11y) validation in JSX
+     * https://github.com/jsx-eslint/eslint-plugin-jsx-a11y
+     */
     "plugin:jsx-a11y/recommended",
     /** Configures import plugin for JSX */
     "plugin:import/react",
