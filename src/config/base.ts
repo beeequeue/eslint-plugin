@@ -4,6 +4,9 @@ import { ESLintRules } from "eslint/rules"
 export const base: Linter.BaseConfig<ESLintRules> = {
   env: {
     es6: true,
+    es2017: true,
+    es2020: true,
+    es2021: true,
   },
   extends: [
     /** ESLint's recommended rules */
@@ -66,7 +69,8 @@ export const base: Linter.BaseConfig<ESLintRules> = {
         alphabetize: { order: "asc" },
         groups: [
           "builtin",
-          ["external", "internal", "unknown"],
+          ["external", "unknown"],
+          "internal",
           "parent",
           ["sibling", "index"],
           "object",
@@ -74,7 +78,12 @@ export const base: Linter.BaseConfig<ESLintRules> = {
         pathGroups: [
           {
             pattern: "@/**/*",
-            group: "internal",
+            group: "parent",
+            position: "before",
+          },
+          {
+            pattern: "@*/**/*",
+            group: "external",
             position: "after",
           },
         ],

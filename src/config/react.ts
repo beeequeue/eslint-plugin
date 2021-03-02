@@ -7,6 +7,10 @@ const reactVersion = getPackageVersion("react")
 const isNextInstalled = isPackageInstalled("next")
 
 export const react: Linter.BaseConfig<ESLintRules> = {
+  env: {
+    browser: true,
+    jsx: true,
+  },
   extends: [
     /**
      * Configures JSX settings, adds react rules
