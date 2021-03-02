@@ -26,6 +26,7 @@ Modular config presets that can be mixed and matched!
 module.exports = {
   root: true,
   extends: [
+    // The base rules are always required
     "plugin:@beequeue/base",
     
     // Any other presets you need
