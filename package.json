@@ -25,6 +25,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "yarn build --watch",
+    "lint": "yarn eslint \"src/**/*.ts\"",
     "release": "yarn build && yarn changeset publish"
   },
   "peerDependencies": {
