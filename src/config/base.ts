@@ -44,9 +44,8 @@ export const base: Linter.BaseConfig<ESLintRules> = {
     "no-unsafe-optional-chaining": "error",
     /** Disallow code that we know might result in floating point errors */
     "no-loss-of-precision": "error",
-    /** Require if/for/when/while blocks to have curly brackets, unless they're one-liners */
-    // @ts-ignore
-    curly: ["error", "multi", "consistent"],
+    /** Require no-bracket blocks to be one-liners */
+    "nonblock-statement-body-position": ["error", "beside"],
 
     /* IMPORT PLUGIN */
 
