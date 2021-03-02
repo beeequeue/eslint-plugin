@@ -37,10 +37,6 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Push git tags
-        if: ${{ steps.changesets.outputs.published == true }}
-        run: git push --tags
-
       - name: Setup publish to GitHub Packages
         if: ${{ steps.changesets.outputs.published == true }}
         uses: actions/setup-node@v1
@@ -50,6 +46,6 @@ jobs:
 
       - name: Setup publish to GitHub Packages
         if: ${{ steps.changesets.outputs.published == true }}
-        run: npm publish
+        run: npm publish --dry-run
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
