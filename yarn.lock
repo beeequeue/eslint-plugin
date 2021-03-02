@@ -299,10 +299,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beequeue/eslint-plugin@workspace:.":
+"@beequeue/eslint-plugin@workspace:*, @beequeue/eslint-plugin@workspace:.":
   version: 0.0.0-use.local
   resolution: "@beequeue/eslint-plugin@workspace:."
   dependencies:
+    "@beequeue/eslint-plugin": "workspace:*"
     "@changesets/changelog-github": 0.2.8
     "@changesets/cli": 2.14.1
     "@types/eslint": 7.2.6

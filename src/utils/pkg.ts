@@ -1,5 +1,6 @@
-import { PackageJson } from "type-fest"
 import { readFileSync } from "fs"
+
+import type { PackageJson } from "type-fest"
 
 const cachedPkgJson: PackageJson | null = null
 
@@ -34,21 +35,15 @@ export const getPackageVersion = (pkg: string) => {
   if (pkgJson == null) return null
 
   if (pkgJson.dependencies && Object.keys(pkgJson.dependencies).includes(pkg)) {
-    return pkgJson.dependencies[pkg] as string
+    return pkgJson.dependencies[pkg]
   }
 
-  if (
-    pkgJson.devDependencies &&
-    Object.keys(pkgJson.devDependencies).includes(pkg)
-  ) {
-    return pkgJson.devDependencies[pkg] as string
+  if (pkgJson.devDependencies && Object.keys(pkgJson.devDependencies).includes(pkg)) {
+    return pkgJson.devDependencies[pkg]
   }
 
-  if (
-    pkgJson.peerDependencies &&
-    Object.keys(pkgJson.peerDependencies).includes(pkg)
-  ) {
-    return pkgJson.peerDependencies[pkg] as string
+  if (pkgJson.peerDependencies && Object.keys(pkgJson.peerDependencies).includes(pkg)) {
+    return pkgJson.peerDependencies[pkg]
   }
 
   return null
