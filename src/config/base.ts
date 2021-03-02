@@ -52,10 +52,6 @@ export const base: Linter.BaseConfig<ESLintRules> = {
 
     /** Extremely slow in some cases */
     "import/no-deprecated": "off",
-
-    /** Disallow duplicate imports */
-    "import/no-duplicated": "error",
-
     /** Custom import order with quick fix */
     "import/order": [
       "error",
@@ -85,7 +81,6 @@ export const base: Linter.BaseConfig<ESLintRules> = {
         "newlines-between": "always",
       },
     ],
-
     /** Only allow devDependency imports in test files */
     "import/no-extraneous-dependencies": [
       "error",
