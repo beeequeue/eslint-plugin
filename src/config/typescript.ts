@@ -41,6 +41,11 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         node: { tryExtensions: [".js", ".ts", ".tsx"] },
       },
       rules: {
+        /** Don't error on operating on `any`s - it's way too strict */
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-unsafe-return": "off",
         /** Don't warn on implicit function returns */
         "@typescript-eslint/explicit-module-boundary-types": "off",
         /** Require explanations for @ts-ignore:s */
