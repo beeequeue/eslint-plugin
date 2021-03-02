@@ -51,5 +51,5 @@ jobs:
       - name: Setup publish to GitHub Packages
         when: ${{ steps.changesets.outputs.published == true }}
         run: npm publish
-          env:
-            GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

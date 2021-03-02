@@ -2,4 +2,3 @@
 .pnp.js
 package.json
 tsconfig.json
-.github/workflows/*
