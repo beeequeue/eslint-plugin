@@ -4,6 +4,18 @@
   "description": "My opinionated, modular ESLint configs",
   "author": "BeeeQueue",
   "license": "MIT",
+  "keywords": [
+    "eslint",
+    "config",
+    "collection",
+    "presets",
+    "typescript",
+    "react",
+    "vue",
+    "node"
+  ],
+  "repository": "github:BeeeQueue/eslint-plugin",
+  "bugs": "https://github.com/BeeeQueue/eslint-plugin/issues",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
