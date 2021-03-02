@@ -317,12 +317,12 @@ __metadata:
     eslint-plugin-prettier: 3.3.1
     eslint-plugin-react: 7.22.0
     eslint-plugin-unicorn: 28.0.2
+    eslint-plugin-vue: 7.7.0
     husky: 4.3.8
     lint-staged: 10.5.4
     prettier: 2.2.1
     type-fest: 0.21.2
     typescript: 4.1.5
-    vue-eslint-parser: 7.5.0
   peerDependencies:
     eslint: ^7.21.0
   languageName: unknown
@@ -1769,6 +1769,20 @@ __metadata:
   peerDependencies:
     eslint: ">=7.17.0"
   checksum: 15d9802fe9036661fd4300705f096f7d30b2bb777e591ad966945eeba335a9e29b186d6096741d293cdf4a7d137dd0f30c0ff9eaa98dd82d41c7235660adbcf2
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-vue@npm:7.7.0":
+  version: 7.7.0
+  resolution: "eslint-plugin-vue@npm:7.7.0"
+  dependencies:
+    eslint-utils: ^2.1.0
+    natural-compare: ^1.4.0
+    semver: ^7.3.2
+    vue-eslint-parser: ^7.6.0
+  peerDependencies:
+    eslint: ^6.2.0 || ^7.0.0
+  checksum: 09c1a5ecc9f08a76759535a0fb73b86e9863db115b460efff415e5d5aa86e3fc7d356360ebb2066b7ababbd86bf282e6f6b3c42a1cdcc3f43796b6675c21ef3e
   languageName: node
   linkType: hard
 
@@ -4411,9 +4425,9 @@ typescript@4.1.5:
   languageName: node
   linkType: hard
 
-"vue-eslint-parser@npm:7.5.0":
-  version: 7.5.0
-  resolution: "vue-eslint-parser@npm:7.5.0"
+"vue-eslint-parser@npm:^7.6.0":
+  version: 7.6.0
+  resolution: "vue-eslint-parser@npm:7.6.0"
   dependencies:
     debug: ^4.1.1
     eslint-scope: ^5.0.0
@@ -4423,7 +4437,7 @@ typescript@4.1.5:
     lodash: ^4.17.15
   peerDependencies:
     eslint: ">=5.0.0"
-  checksum: d6da2a29295325c0fbe2f973662e9b5fdb6477e913e436a20e49025f6e1736c41cdaf73f8273ea5536154685b2a096cf1cf1c77dd121ae4ff86841fb0fb8004b
+  checksum: 27d6bc4acaafe897af8eee41512d0cd2812b533883d7ecbfda30c263533ebf486fdd76cb65f546f3c3737df383fb4bc33ecb358d7397b8b731c161c89db72bcd
   languageName: node
   linkType: hard
 
