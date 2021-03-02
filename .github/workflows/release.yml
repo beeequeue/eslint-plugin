@@ -37,15 +37,17 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - run: echo '${{ toJSON(steps.changesets.outputs) }}'
+
       - name: Setup publish to GitHub Packages
-        if: ${{ steps.changesets.outputs.published == true }}
+        if: ${{ fromJSON(steps.changesets.outputs.published) == true }}
         uses: actions/setup-node@v1
         with:
           node-version: 14
           registry-url: https://npm.pkg.github.com/
 
-      - name: Setup publish to GitHub Packages
-        if: ${{ steps.changesets.outputs.published == true }}
+      - name: Publish to GitHub Packages
+        if: ${{ fromJSON(steps.changesets.outputs.published) == true }}
         run: npm publish --dry-run
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
