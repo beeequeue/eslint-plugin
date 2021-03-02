@@ -21,7 +21,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "yarn build --watch"
+    "dev": "yarn build --watch",
+    "release": "yarn build && yarn changeset publish"
   },
   "peerDependencies": {
     "eslint": "^7.21.0"
@@ -39,6 +40,8 @@
     "vue-eslint-parser": "7.5.0"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "0.2.8",
+    "@changesets/cli": "2.14.1",
     "@types/eslint": "7.2.6",
     "@types/node": "14.14.31",
     "eslint": "7.21.0",

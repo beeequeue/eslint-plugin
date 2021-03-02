@@ -1,0 +1,11 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@1.5.0/schema.json",
+  "access": "public",
+  "baseBranch": "main",
+  "changelog": [
+    "./changelog-formatter.js",
+    {
+      "repo": "BeeeQueue/eslint-plugin"
+    }
+  ]
+}
