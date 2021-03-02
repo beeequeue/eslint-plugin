@@ -117,6 +117,8 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         "no-unused-expressions": "off",
         "no-unused-vars": "off",
         "@typescript-eslint/no-unused-vars": "off",
+        "node/no-missing-import": "off",
+        "node/no-extraneous-import": "off",
       },
     },
     {

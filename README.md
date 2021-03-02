@@ -6,7 +6,7 @@ Modular config presets that can be mixed and matched!
 
 - [Basic Javascript](./src/config/base.ts): `plugin:@beequeue/base`
 - [TypeScript](./src/config/typescript.ts): `plugin:@beequeue/typescript`
-- ~~[Node](./src/config/node.ts): `plugin:@beequeue/node`~~
+- [Node](./src/config/node.ts): `plugin:@beequeue/node`
 - [React](./src/config/react.ts): `plugin:@beequeue/react`
   - ~~[NextJS](./src/config/nextjs.ts): `plugin:@beequeue/nextjs`~~
 - [Vue](./src/config/vue.ts): `plugin:@beequeue/vue`
