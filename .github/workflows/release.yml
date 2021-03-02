@@ -7,7 +7,6 @@ on:
 
 jobs:
   release:
-    name: Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -37,17 +36,13 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - run: echo '${{ toJSON(steps.changesets.outputs) }}'
-
       - name: Setup publish to GitHub Packages
         if: ${{ fromJSON(steps.changesets.outputs.published) == true }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: 14
-          registry-url: https://npm.pkg.github.com/
+        run: echo registry=https://npm.pkg.github.com/BeeeQueue >> .npmrc
 
       - name: Publish to GitHub Packages
         if: ${{ fromJSON(steps.changesets.outputs.published) == true }}
-        run: npm publish --dry-run
+        run: npm publish
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
