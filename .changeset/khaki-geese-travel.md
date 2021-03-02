@@ -2,4 +2,4 @@
 "@beequeue/eslint-plugin": minor
 ---
 
-`typescript`: Relaxed `any` operation restrictions
+`typescript`: Relaxed `any` operation restrictions.
