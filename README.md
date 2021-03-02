@@ -8,8 +8,9 @@ Modular config presets that can be mixed and matched!
 - [TypeScript](./src/config/typescript.ts): `plugin:@beequeue/typescript`
 - ~~[Node](./src/config/node.ts): `plugin:@beequeue/node`~~
 - [React](./src/config/react.ts): `plugin:@beequeue/react`
-- ~~[NextJS](./src/config/nextjs.ts): `plugin:@beequeue/nextjs`~~
-- ~~[Vue](./src/config/vue.ts): `plugin:@beequeue/vue`~~
+  - ~~[NextJS](./src/config/nextjs.ts): `plugin:@beequeue/nextjs`~~
+- [Vue](./src/config/vue.ts): `plugin:@beequeue/vue`
+  - [Vue 2](./src/config/vue2.ts): `plugin:@beequeue/vue2`
 - [Electron](./src/config/electron.ts): `plugin:@beequeue/electron`
 - [Prettier](./src/config/prettier.ts): `plugin:@beequeue/prettier`
 
