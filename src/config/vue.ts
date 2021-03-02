@@ -2,6 +2,9 @@ import { Linter } from "eslint"
 import { ESLintRules } from "eslint/rules"
 
 export const vue: Linter.BaseConfig<ESLintRules> = {
+  env: {
+    browser: true,
+  },
   extends: [
     /**
      * Enables plugin, adds recommended rules

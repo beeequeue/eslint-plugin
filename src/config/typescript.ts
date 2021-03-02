@@ -26,6 +26,7 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
       ],
       parserOptions: {
+        extraFileExtensions: [".vue"],
         project: "./tsconfig.json",
         tsconfigRootDir: "./",
         warnOnUnsupportedTypeScriptVersion: false,
@@ -69,12 +70,12 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
             trailingUnderscore: "allow",
           },
           {
-            selector: "typeLike",
+            selector: ["typeLike", "enumMember"],
             format: ["PascalCase"],
           },
           {
-            selector: "enumMember",
-            format: ["PascalCase"],
+            selector: "objectLiteralProperty",
+            format: ["camelCase", "PascalCase"],
           },
         ],
         /** Require using `type` over `interface` */
@@ -118,6 +119,7 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
       parser: "vue-eslint-parser",
       parserOptions: {
         parser: "@typescript-eslint/parser",
+        extraFileExtensions: [".vue"],
         project: "./tsconfig.json",
         tsconfigRootDir: "./",
         warnOnUnsupportedTypeScriptVersion: false,
