@@ -4,5 +4,9 @@
   "initialVersions": {
     "@beequeue/eslint-plugin": "0.0.1-beta.2"
   },
-  "changesets": []
+  "changesets": [
+    "grumpy-doors-exist",
+    "khaki-geese-travel",
+    "six-olives-tie"
+  ]
 }
