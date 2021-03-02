@@ -1,5 +1,11 @@
 # @beequeue/eslint-plugin
 
+## 0.1.0
+
+### Minor Changes
+
+- [`499a79f`](https://github.com/BeeeQueue/eslint-plugin/commit/499a79f453682e00b30929426e66bf3afe75f271) - Initial release.
+
 ## 0.1.0-beta.3
 
 ### Minor Changes

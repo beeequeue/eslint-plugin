@@ -1,8 +1,0 @@
-{
-  "mode": "exit",
-  "tag": "beta",
-  "initialVersions": {
-    "@beequeue/eslint-plugin": "0.0.1-beta.2"
-  },
-  "changesets": []
-}
