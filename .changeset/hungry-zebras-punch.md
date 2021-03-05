@@ -2,4 +2,4 @@
 "@beequeue/eslint-plugin": patch
 ---
 
-Disabled `node/no-unpublished-imports` in `typescript` preset.
+`typescript`: Disabled `node/no-unpublished-imports` as it breaks with types.
