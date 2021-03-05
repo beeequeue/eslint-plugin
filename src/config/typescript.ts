@@ -93,6 +93,9 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         /** Allow void before floating promises */
         "no-void": ["error", { allowAsStatement: true }],
 
+        /* Does not work with types */
+        "node/no-unpublished-imports": "off",
+
         /* Overrides that add TS functionality */
         "@typescript-eslint/no-shadow": "error",
         "@typescript-eslint/no-loss-of-precision": "error",
