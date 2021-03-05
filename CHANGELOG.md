@@ -1,5 +1,11 @@
 # @beequeue/eslint-plugin
 
+## 0.1.1
+
+### Patch Changes
+
+- [`7e183f7`](https://github.com/BeeeQueue/eslint-plugin/commit/7e183f7ad787beb1edb442219bba3411d9bb662c) [#5](https://github.com/BeeeQueue/eslint-plugin/pull/5) - `typescript`: Disabled `node/no-unpublished-imports` as it breaks with types.
+
 ## 0.1.0
 
 ### Minor Changes
