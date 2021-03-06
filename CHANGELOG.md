@@ -1,5 +1,11 @@
 # @beequeue/eslint-plugin
 
+## 0.1.2
+
+### Patch Changes
+
+- [`dab1e39`](https://github.com/BeeeQueue/eslint-plugin/commit/dab1e39aecf05941c1923c7b2e52c60c5ee28e29) [#8](https://github.com/BeeeQueue/eslint-plugin/pull/8) - `typescript`: Fixed typo in `node/no-unpublished-import` disabling.
+
 ## 0.1.1
 
 ### Patch Changes
