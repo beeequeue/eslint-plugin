@@ -94,7 +94,7 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         "no-void": ["error", { allowAsStatement: true }],
 
         /* Does not work with types */
-        "node/no-unpublished-imports": "off",
+        "node/no-unpublished-import": "off",
 
         /* Overrides that add TS functionality */
         "@typescript-eslint/no-shadow": "error",
