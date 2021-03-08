@@ -1,5 +1,11 @@
 # @beequeue/eslint-plugin
 
+## 0.1.3
+
+### Patch Changes
+
+- [`61b6a31`](https://github.com/BeeeQueue/eslint-plugin/commit/61b6a317241e3a6678794d4a060437113e210c82) [#10](https://github.com/BeeeQueue/eslint-plugin/pull/10) - `typescript`: Fixed issue with resolving `tsconfig.json`s.
+
 ## 0.1.2
 
 ### Patch Changes
