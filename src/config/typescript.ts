@@ -27,8 +27,7 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
       ],
       parserOptions: {
         extraFileExtensions: [".vue"],
-        project: "./tsconfig.json",
-        tsconfigRootDir: "./",
+        project: "**/tsconfig.json",
         warnOnUnsupportedTypeScriptVersion: false,
       },
       settings: {
@@ -130,8 +129,7 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
       parserOptions: {
         parser: "@typescript-eslint/parser",
         extraFileExtensions: [".vue"],
-        project: "./tsconfig.json",
-        tsconfigRootDir: "./",
+        project: "**/tsconfig.json",
         warnOnUnsupportedTypeScriptVersion: false,
       },
     },
