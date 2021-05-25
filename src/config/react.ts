@@ -48,6 +48,8 @@ export const react: Linter.BaseConfig<ESLintRules> = {
         ],
         /** Require whitespace between adjacent JSX elements */
         "react/no-adjacent-inline-elements": "error",
+        /** Don't allow components that are re-created every render */
+        "react/no-unstable-nested-components": "error",
 
         /** Disabled if we're using a version that supports excluding `React` import */
         "react/react-in-jsx-scope":
