@@ -9,15 +9,19 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@master
 
-      - name: Setup Node
-        uses: actions/setup-node@v2
+      - uses: actions/cache@v2
         with:
-          node-version: 14
+          path: ${{ steps.yarn-cache-dir.outputs.dir }}
+          key: yarn-c1-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            yarn-c1-
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.17
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1.6.0
-        with:
-          install-command: yarn --immutable
+        run: yarn install --immutable
 
       - name: Build
         run: yarn build
