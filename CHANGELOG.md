@@ -1,5 +1,21 @@
 # @beequeue/eslint-plugin
 
+## 0.2.0
+
+### Minor Changes
+
+- [#12](https://github.com/BeeeQueue/eslint-plugin/pull/12) [`177473e`](https://github.com/BeeeQueue/eslint-plugin/commit/177473eeff955433b6cf2b430165384dcade68cb) - Enabled `eslint-plugin-unicorn`'s recommended rules, with a few exceptions
+
+* [#12](https://github.com/BeeeQueue/eslint-plugin/pull/12) [`177473e`](https://github.com/BeeeQueue/eslint-plugin/commit/177473eeff955433b6cf2b430165384dcade68cb) - `react`: Enabled `react/no-unstable-nested-components`, disallowing components that are re-created every render
+
+- [#12](https://github.com/BeeeQueue/eslint-plugin/pull/12) [`177473e`](https://github.com/BeeeQueue/eslint-plugin/commit/177473eeff955433b6cf2b430165384dcade68cb) - `typescript`: Type imports are now sorted below all other imports
+
+### Patch Changes
+
+- [#12](https://github.com/BeeeQueue/eslint-plugin/pull/12) [`177473e`](https://github.com/BeeeQueue/eslint-plugin/commit/177473eeff955433b6cf2b430165384dcade68cb) - Updated all dependencies
+
+* [#12](https://github.com/BeeeQueue/eslint-plugin/pull/12) [`177473e`](https://github.com/BeeeQueue/eslint-plugin/commit/177473eeff955433b6cf2b430165384dcade68cb) - `typescript`: Removed warning about non-null assertions
+
 ## 0.1.3
 
 ### Patch Changes
