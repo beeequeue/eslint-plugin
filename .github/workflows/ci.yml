@@ -9,6 +9,10 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@master
 
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+
       - uses: actions/cache@v2
         with:
           path: ${{ steps.yarn-cache-dir.outputs.dir }}
