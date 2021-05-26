@@ -6,6 +6,10 @@ export const base: Linter.BaseConfig<ESLintRules> = {
     /** ESLint's recommended rules */
     "eslint:recommended",
     /**
+     * Adds Unicorn plugin, recommended Unicorn rules
+     */
+    "plugin:unicorn/recommended",
+    /**
      * Adds import plugin, recommended import rules, some parserOptions
      * https://github.com/benmosher/eslint-plugin-import
      */
@@ -46,6 +50,22 @@ export const base: Linter.BaseConfig<ESLintRules> = {
     "no-loss-of-precision": "error",
     /** Require no-bracket blocks to be one-liners */
     "nonblock-statement-body-position": ["error", "beside"],
+
+    /* UNICORN PLUGIN */
+
+    /** Allow abbreviations */
+    "unicorn/prevent-abbreviations": "off",
+    /** Allow `null` */
+    "unicorn/no-null": "off",
+    /** Allow `Array.reduce` */
+    "unicorn/no-array-reduce": "off",
+    /** Enforce kebab-case in filenames */
+    "unicorn/filename-case": [
+      "error",
+      {
+        case: "kebabCase",
+      },
+    ],
 
     /* IMPORT PLUGIN */
 

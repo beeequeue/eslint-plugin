@@ -123,6 +123,7 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         "@typescript-eslint/no-unused-vars": "off",
         "node/no-missing-import": "off",
         "node/no-extraneous-import": "off",
+        "unicorn/no-array-callback-reference": "off",
       },
     },
     {
