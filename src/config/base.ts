@@ -59,6 +59,8 @@ export const base: Linter.BaseConfig<ESLintRules> = {
     "unicorn/no-null": "off",
     /** Allow `Array.reduce` */
     "unicorn/no-array-reduce": "off",
+    /** Don't require node: prefix for node builtins (breaks TypeScript) */
+    "unicorn/prefer-node-protocol": "off",
     /** Enforce kebab-case in filenames */
     "unicorn/filename-case": [
       "error",
