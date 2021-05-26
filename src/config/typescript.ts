@@ -40,6 +40,8 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         node: { tryExtensions: [".js", ".ts", ".tsx"] },
       },
       rules: {
+        /** Don't warn about non-null assertions - assume they're used responsibly */
+        "@typescript-eslint/no-non-null-assertion": "off",
         /** Don't error on operating on `any`s - it's way too strict */
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-member-access": "off",
@@ -121,6 +123,7 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         "@typescript-eslint/no-unused-vars": "off",
         "node/no-missing-import": "off",
         "node/no-extraneous-import": "off",
+        "unicorn/no-array-callback-reference": "off",
       },
     },
     {

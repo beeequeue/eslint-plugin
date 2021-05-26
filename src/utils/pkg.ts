@@ -11,7 +11,7 @@ export const getPkgJson = (): PackageJson | null => {
     const contents = readFileSync("./package.json", { encoding: "utf-8" })
 
     return JSON.parse(contents)
-  } catch (_) {
+  } catch {
     console.error("Could not load package.json :(")
     return null
   }
