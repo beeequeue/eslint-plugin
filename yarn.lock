@@ -319,6 +319,10 @@ __metadata:
     typescript: 4.3.2
   peerDependencies:
     eslint: ^7.21.0
+    prettier: ^2.3.0
+  peerDependenciesMeta:
+    prettier:
+      optional: true
   languageName: unknown
   linkType: soft
 
