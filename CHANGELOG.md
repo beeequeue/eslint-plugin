@@ -1,5 +1,11 @@
 # @beequeue/eslint-plugin
 
+## 0.2.1
+
+### Patch Changes
+
+- [#14](https://github.com/BeeeQueue/eslint-plugin/pull/14) [`9f80ed3`](https://github.com/BeeeQueue/eslint-plugin/commit/9f80ed3aea683d240735747ca677e4bfadb9eb4a) - Added missing optional `peerDependency` on `prettier`
+
 ## 0.2.0
 
 ### Minor Changes
