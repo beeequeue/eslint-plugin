@@ -53,6 +53,17 @@ export const base: Linter.BaseConfig<ESLintRules> = {
 
     /* UNICORN PLUGIN */
 
+    /** Require saying which separator to use in Array.join */
+    "unicorn/require-array-join-separator": "error",
+    /** Prefer Object.fromEntries */
+    "unicorn/prefer-object-from-entries": "error",
+    /** Don't allow useless extra code */
+    "unicorn/no-useless-length-check": "error",
+    "unicorn/no-useless-spread": "error",
+    /** Disallow the `this` argument */
+    "unicorn/no-array-method-this-argument": "error",
+    /** Use shorter version of hasOwn */
+    "unicorn/prefer-object-has-own": "error",
     /** Allow abbreviations */
     "unicorn/prevent-abbreviations": "off",
     /** Allow `null` */

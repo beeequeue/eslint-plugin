@@ -22,7 +22,7 @@
     "dist"
   ],
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   },
   "simple-git-hooks": {
     "pre-commit": "yarn lint-staged"
@@ -42,8 +42,8 @@
     "postpublish": "pinst --enable"
   },
   "peerDependencies": {
-    "eslint": "^7.21.0",
-    "prettier": "^2.3.0"
+    "eslint": "^7.32.0",
+    "prettier": "^2.3.2"
   },
   "peerDependenciesMeta": {
     "prettier": {
@@ -51,30 +51,31 @@
     }
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "4.25.0",
-    "@typescript-eslint/parser": "4.25.0",
+    "@typescript-eslint/eslint-plugin": "4.29.3",
+    "@typescript-eslint/parser": "4.29.3",
     "eslint-config-prettier": "8.3.0",
     "eslint-import-resolver-typescript": "2.4.0",
-    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-import": "2.24.2",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-prettier": "3.4.0",
-    "eslint-plugin-react": "7.23.2",
-    "eslint-plugin-unicorn": "32.0.1",
-    "eslint-plugin-vue": "7.9.0"
+    "eslint-plugin-prettier": "3.4.1",
+    "eslint-plugin-react": "7.25.0",
+    "eslint-plugin-unicorn": "35.0.0",
+    "eslint-plugin-vue": "7.17.0"
   },
   "devDependencies": {
     "@beequeue/eslint-plugin": "workspace:*",
     "@changesets/changelog-github": "0.4.0",
     "@changesets/cli": "2.16.0",
-    "@types/eslint": "7.2.11",
-    "@types/node": "14.17.1",
-    "eslint": "7.27.0",
-    "lint-staged": "11.0.0",
+    "@tsconfig/node14": "1.0.1",
+    "@types/eslint": "7.28.0",
+    "@types/node": "14.17.12",
+    "eslint": "7.32.0",
+    "lint-staged": "11.1.2",
     "pinst": "2.1.6",
-    "prettier": "2.2.1",
-    "simple-git-hooks": "2.4.1",
-    "type-fest": "1.1.3",
-    "typescript": "4.3.2"
+    "prettier": "2.3.2",
+    "simple-git-hooks": "2.6.1",
+    "type-fest": "2.1.0",
+    "typescript": "4.4.2"
   }
 }
