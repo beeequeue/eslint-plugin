@@ -9,20 +9,10 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@master
 
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir
-        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-
-      - uses: actions/cache@v2
-        with:
-          path: ${{ steps.yarn-cache-dir.outputs.dir }}
-          key: yarn-c1-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            yarn-c1-
-
       - uses: actions/setup-node@v2
         with:
           node-version: 14.17
+          cache: yarn
 
       - name: Install dependencies
         run: yarn install --immutable
