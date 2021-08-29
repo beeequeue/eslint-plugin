@@ -1,5 +1,19 @@
 # @beequeue/eslint-plugin
 
+## 0.3.0
+
+### Minor Changes
+
+- [#16](https://github.com/BeeeQueue/eslint-plugin/pull/16) [`cf9fa9d`](https://github.com/BeeeQueue/eslint-plugin/commit/cf9fa9d3c70fc0481317b5ea6fed315db4f594a8) - Enabled more rules from the Unicorn plugin
+
+* [#16](https://github.com/BeeeQueue/eslint-plugin/pull/16) [`cf9fa9d`](https://github.com/BeeeQueue/eslint-plugin/commit/cf9fa9d3c70fc0481317b5ea6fed315db4f594a8) - Minimum required node version is now 14
+
+- [#16](https://github.com/BeeeQueue/eslint-plugin/pull/16) [`cf9fa9d`](https://github.com/BeeeQueue/eslint-plugin/commit/cf9fa9d3c70fc0481317b5ea6fed315db4f594a8) - Updated Vue plugin to support <script setup>
+
+### Patch Changes
+
+- [#16](https://github.com/BeeeQueue/eslint-plugin/pull/16) [`cf9fa9d`](https://github.com/BeeeQueue/eslint-plugin/commit/cf9fa9d3c70fc0481317b5ea6fed315db4f594a8) - Updated dependencies
+
 ## 0.2.1
 
 ### Patch Changes
