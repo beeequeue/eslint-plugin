@@ -1,20 +1,15 @@
 {
+  "extends": "@tsconfig/node14/tsconfig.json",
   "compilerOptions": {
     "outDir": "dist",
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
-    "target": "es6",
-    "module": "commonjs",
     "moduleResolution": "node",
-    "esModuleInterop": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "forceConsistentCasingInFileNames": true,
-    "lib": ["esnext"],
     "types": ["node"]
   },
   "include": ["**/*.ts", "**/*.tsx"],

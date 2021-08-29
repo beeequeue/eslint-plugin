@@ -297,8 +297,9 @@ __metadata:
     "@beequeue/eslint-plugin": "workspace:*"
     "@changesets/changelog-github": 0.4.0
     "@changesets/cli": 2.16.0
+    "@tsconfig/node14": 1.0.1
     "@types/eslint": 7.2.11
-    "@types/node": 14.17.1
+    "@types/node": 14.17.12
     "@typescript-eslint/eslint-plugin": 4.25.0
     "@typescript-eslint/parser": 4.25.0
     eslint: 7.27.0
@@ -311,12 +312,12 @@ __metadata:
     eslint-plugin-react: 7.23.2
     eslint-plugin-unicorn: 32.0.1
     eslint-plugin-vue: 7.9.0
-    lint-staged: 11.0.0
+    lint-staged: 11.1.2
     pinst: 2.1.6
-    prettier: 2.2.1
-    simple-git-hooks: 2.4.1
-    type-fest: 1.1.3
-    typescript: 4.3.2
+    prettier: 2.3.2
+    simple-git-hooks: 2.6.1
+    type-fest: 2.1.0
+    typescript: 4.4.2
   peerDependencies:
     eslint: ^7.21.0
     prettier: ^2.3.0
@@ -632,6 +633,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tsconfig/node14@npm:1.0.1":
+  version: 1.0.1
+  resolution: "@tsconfig/node14@npm:1.0.1"
+  checksum: 976345e896c0f059867f94f8d0f6ddb8b1844fb62bf36b727de8a9a68f024857e5db97ed51d3325e23e0616a5e48c034ff51a8d595b3fe7e955f3587540489be
+  languageName: node
+  linkType: hard
+
 "@types/eslint@npm:7.2.11":
   version: 7.2.11
   resolution: "@types/eslint@npm:7.2.11"
@@ -670,10 +678,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:14.17.1":
-  version: 14.17.1
-  resolution: "@types/node@npm:14.17.1"
-  checksum: 81cc34ecd6e21ed723f00e55f042ccc1e1bde306122fa73aab9437584339fe1dd0c10e00ee691c99f0b9ca1ebcc9d6f0d35ca78356f7d0d580eaf3e93bd48718
+"@types/node@npm:14.17.12":
+  version: 14.17.12
+  resolution: "@types/node@npm:14.17.12"
+  checksum: 7efbce3781a0ea5d7a39bca3c5ed9c4e4d99fed3483fb2a89670aeb049cd9d25f1ddecd8fb58420fd92de371278721ddd6e3ad95c4f55992592f1ac5d1dedf98
   languageName: node
   linkType: hard
 
@@ -1455,13 +1463,6 @@ __metadata:
   version: 1.2.0
   resolution: "decamelize@npm:1.2.0"
   checksum: ad8c51a7e7e0720c70ec2eeb1163b66da03e7616d7b98c9ef43cce2416395e84c1e9548dd94f5f6ffecfee9f8b94251fc57121a8b021f2ff2469b2bae247b8aa
-  languageName: node
-  linkType: hard
-
-"dedent@npm:^0.7.0":
-  version: 0.7.0
-  resolution: "dedent@npm:0.7.0"
-  checksum: 87de191050d9a40dd70cad01159a0bcf05ecb59750951242070b6abf9569088684880d00ba92a955b4058804f16eeaf91d604f283929b4f614d181cd7ae633d2
   languageName: node
   linkType: hard
 
@@ -2865,16 +2866,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:11.0.0":
-  version: 11.0.0
-  resolution: "lint-staged@npm:11.0.0"
+"lint-staged@npm:11.1.2":
+  version: 11.1.2
+  resolution: "lint-staged@npm:11.1.2"
   dependencies:
     chalk: ^4.1.1
     cli-truncate: ^2.1.0
     commander: ^7.2.0
     cosmiconfig: ^7.0.0
     debug: ^4.3.1
-    dedent: ^0.7.0
     enquirer: ^2.3.6
     execa: ^5.0.0
     listr2: ^3.8.2
@@ -2886,7 +2886,7 @@ __metadata:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 3be24b4a88799264bbb9baeedfc5be278d25aa85dc766c5328da23d5d92300c0a163563b455d530ca2a74510a161f17623e846e1aca81e44f389108274ad2acd
+  checksum: 0050d1836dda879c58561fa4efd100f5cd14fcbf8ee3fdeab7e89ec4219c019543bb5bf2442f760557ebe4bb8b7bfc56a9c98b9384acecfe0f8553f091723e36
   languageName: node
   linkType: hard
 
@@ -3636,12 +3636,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.2.1":
-  version: 2.2.1
-  resolution: "prettier@npm:2.2.1"
+"prettier@npm:2.3.2":
+  version: 2.3.2
+  resolution: "prettier@npm:2.3.2"
   bin:
     prettier: bin-prettier.js
-  checksum: 800de2df3d37067ab24478c7f32c60ca0c57b01742133287829feeb4a70d239a7bf6bccb56196784777af591ad80fb9ba70c1a49b0fcecf9f5622a764d513edb
+  checksum: 17ce5784ac67621c292df58e2da60b2ee150c2d6aebea22a6ad9e52fcd6a5e66c349d0a8436ea3bd8ff9d778920a5f68000d7625b74f43558718a49755aa5259
   languageName: node
   linkType: hard
 
@@ -4050,12 +4050,12 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"simple-git-hooks@npm:2.4.1":
-  version: 2.4.1
-  resolution: "simple-git-hooks@npm:2.4.1"
+"simple-git-hooks@npm:2.6.1":
+  version: 2.6.1
+  resolution: "simple-git-hooks@npm:2.6.1"
   bin:
     simple-git-hooks: cli.js
-  checksum: fbf906e19b521108b56e21e9d11985d56b9ac2e43699393d4afc630b00026e59bf4e86a2fc7180b6ba1b38090c0eb5509e8f8f280bf4656c18e062ba28594691
+  checksum: e9124305eeee6a9b27e516a2dc023cae0dc595c5b26a3b6b97d33be372c297c6d8c7d45cb5add23d45d5b66d2e3aff3962bf444ad83a6f7258176cb3be1db160
   languageName: node
   linkType: hard
 
@@ -4449,10 +4449,10 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"type-fest@npm:1.1.3":
-  version: 1.1.3
-  resolution: "type-fest@npm:1.1.3"
-  checksum: 47f981b2d5139c7a1317d6696f81cedb208b7e9267605938609062c742fd637d19859fafba9f505f436cc035eb9d33abccea4acaa64e16d6d2b35b2cc51e9e6b
+"type-fest@npm:2.1.0":
+  version: 2.1.0
+  resolution: "type-fest@npm:2.1.0"
+  checksum: 09bfb7f3a3471fc0da0f001db696f970d48edf28706ceecdda362181006689a129c51b22a440c6e838bf77cb57c059f0a968da31ad4f84d3082ee89fa662c060
   languageName: node
   linkType: hard
 
@@ -4491,23 +4491,23 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-typescript@4.3.2:
-  version: 4.3.2
-  resolution: "typescript@npm:4.3.2"
+typescript@4.4.2:
+  version: 4.4.2
+  resolution: "typescript@npm:4.4.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: c2a86fa03ce03b255adc13ccd70a55173ca6539ae12114feca59f34a4e9bb69f14fb7cd5adc6c2416e568cff05c870b89d1366768ec55fce04fbdffb429a1cee
+  checksum: 194e08e9d1971d667d6fd1a0554616b7022312a2319d70e81a64e502a265992061ee7817ed9a69b52bbabe7a9b85e7938cb8c11c433e40a516b277f8c4dacd51
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.3.2#~builtin<compat/typescript>":
-  version: 4.3.2
-  resolution: "typescript@patch:typescript@npm%3A4.3.2#~builtin<compat/typescript>::version=4.3.2&hash=d8b4e7"
+"typescript@patch:typescript@4.4.2#~builtin<compat/typescript>":
+  version: 4.4.2
+  resolution: "typescript@patch:typescript@npm%3A4.4.2#~builtin<compat/typescript>::version=4.4.2&hash=d8b4e7"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 3d3dec06ba6e5b05caa292355712ed9db813fa1c2377630b1f24b42e5ee8957f0bcdd5efd1500c970a11a6f684897f5728f5542ac822932227159a0611499a5e
+  checksum: 11d6ab6e868117908c388401e2ac06d503c5c8709115ab80ee69a1a6352c1f98471d1e595636bfe6a2d6b20b03a44df6bb2d3d198cea97c0c328968cd18d2b70
   languageName: node
   linkType: hard
 
