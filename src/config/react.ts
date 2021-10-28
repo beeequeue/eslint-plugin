@@ -38,6 +38,8 @@ export const react: Linter.BaseConfig<ESLintRules> = {
         "react/jsx-newline": "error",
         /** Self-explanatory */
         "react/default-props-match-prop-types": "error",
+        /** https://github.com/facebook/react/issues/10810#issuecomment-332067094 */
+        // TODO: in react plugin 7.27 "react/no-arrow-function-lifecycle": "error",
         /** Require components to use arrow syntax, except if we need a named function to get a named component */
         "react/function-component-definition": [
           "error",
