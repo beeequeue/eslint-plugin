@@ -44,8 +44,6 @@ export const base: Linter.BaseConfig<ESLintRules> = {
     "no-extend-native": "error",
     /** https://eslint.org/docs/rules/no-else-return */
     "no-else-return": "error",
-    /** Don't allow optional chaining where it might create runtime errors */
-    "no-unsafe-optional-chaining": "error",
     /** Disallow code that we know might result in floating point errors */
     "no-loss-of-precision": "error",
     /** Require no-bracket blocks to be one-liners */
@@ -72,6 +70,8 @@ export const base: Linter.BaseConfig<ESLintRules> = {
     "unicorn/no-array-reduce": "off",
     /** Don't require node: prefix for node builtins (breaks TypeScript) */
     "unicorn/prefer-node-protocol": "off",
+    /** Enforce correct indentation on template strings */
+    "unicorn/template-indent": "error",
     /** Enforce kebab-case in filenames */
     "unicorn/filename-case": [
       "error",
