@@ -11,14 +11,14 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-          node-version: 14.17
-          cache: yarn
+          node-version: 14.18
+          cache: pnpm
 
       - name: Install dependencies
-        run: yarn install --immutable
+        run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: yarn build
+        run: pnpm build
 
       - name: Lint
-        run: yarn lint
+        run: pnpm lint
