@@ -27,6 +27,6 @@ export const vue: Linter.BaseConfig<ESLintRules> = {
     /* Deprecated */
 
     "vue/no-deprecated-v-is": "error",
-    "vue/vue/no-deprecated-router-link-tag-prop": "error",
+    "vue/no-deprecated-router-link-tag-prop": "error",
   },
 }
