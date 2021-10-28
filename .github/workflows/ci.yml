@@ -9,6 +9,10 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@master
 
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 6.19
+
       - uses: actions/setup-node@v2
         with:
           node-version: 14.18
