@@ -47,6 +47,8 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         "@typescript-eslint/no-unsafe-member-access": "off",
         "@typescript-eslint/no-unsafe-call": "off",
         "@typescript-eslint/no-unsafe-return": "off",
+        /** Require type-only exports to explicitly say that they are type exports, to help compilers */
+        "@typescript-eslint/consistent-type-exports": "off",
         /** Don't warn on implicit function returns */
         "@typescript-eslint/explicit-module-boundary-types": "off",
         /** Require explanations for @ts-ignore:s */
