@@ -12,6 +12,9 @@ export const vue: Linter.BaseConfig<ESLintRules> = {
   rules: {
     /** Allow using v-html to insert html strings. We should know when this is necessary and when it's not. */
     "vue/no-v-html": "off",
+    /** Self-explanatory */
+    "vue/no-useless-template-attributes": "error",
+    "vue/no-computed-properties-in-data": "error",
 
     /* Setup support */
 
@@ -24,5 +27,6 @@ export const vue: Linter.BaseConfig<ESLintRules> = {
     /* Deprecated */
 
     "vue/no-deprecated-v-is": "error",
+    "vue/vue/no-deprecated-router-link-tag-prop": "error",
   },
 }
