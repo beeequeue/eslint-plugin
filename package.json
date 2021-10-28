@@ -60,7 +60,7 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.26.1",
-    "eslint-plugin-unicorn": "35.0.0",
+    "eslint-plugin-unicorn": "37.0.1",
     "eslint-plugin-vue": "7.17.0"
   },
   "devDependencies": {

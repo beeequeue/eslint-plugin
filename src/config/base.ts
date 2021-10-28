@@ -70,6 +70,8 @@ export const base: Linter.BaseConfig<ESLintRules> = {
     "unicorn/no-array-reduce": "off",
     /** Don't require node: prefix for node builtins (breaks TypeScript) */
     "unicorn/prefer-node-protocol": "off",
+    /** Enforce correct indentation on template strings */
+    "unicorn/template-indent": "error",
     /** Enforce kebab-case in filenames */
     "unicorn/filename-case": [
       "error",
