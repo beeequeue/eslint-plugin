@@ -1,4 +1,3 @@
-.yarn
-.pnp.js
 package.json
 tsconfig.json
+pnpm-lock.yaml
