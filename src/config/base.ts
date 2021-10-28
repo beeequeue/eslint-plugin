@@ -44,8 +44,6 @@ export const base: Linter.BaseConfig<ESLintRules> = {
     "no-extend-native": "error",
     /** https://eslint.org/docs/rules/no-else-return */
     "no-else-return": "error",
-    /** Don't allow optional chaining where it might create runtime errors */
-    "no-unsafe-optional-chaining": "error",
     /** Disallow code that we know might result in floating point errors */
     "no-loss-of-precision": "error",
     /** Require no-bracket blocks to be one-liners */
