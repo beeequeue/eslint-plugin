@@ -10,6 +10,9 @@ Modular config presets that can be mixed and matched!
 - [Basic Javascript](./src/config/base.ts): `plugin:@beequeue/base`
 - [TypeScript](./src/config/typescript.ts): `plugin:@beequeue/typescript`
 - [Node](./src/config/node.ts): `plugin:@beequeue/node`
+- GraphQL (requires additional configuration, see Usage)
+  - [Client](./src/config/graphql.ts): `plugin:@beequeue/graphql-client`
+  - [Server](./src/config/graphql.ts): `plugin:@beequeue/graphql-server`
 - [React](./src/config/react.ts): `plugin:@beequeue/react`
   - ~~[NextJS](./src/config/nextjs.ts): `plugin:@beequeue/nextjs`~~
 - [Vue](./src/config/vue.ts): `plugin:@beequeue/vue`
@@ -28,11 +31,19 @@ Modular config presets that can be mixed and matched!
 // .eslintrc.js
 module.exports = {
   root: true,
+  // If you use a GraphQL preset you need to provide additional data for the plugin to work with
+  parserOptions: {
+    // Path or link to the GraphQL schema
+    schema: "https://graphql.example.com",
+    // If you use the Client preset you also need to provide globs to your operation files
+    operations: ["src/**/*.{js,ts,graphql}"],
+  },
   extends: [
     // The base rules are always required
     "plugin:@beequeue/base",
     
     // Any other presets you need
+    "plugin:@beequeue/graphql",
     "plugin:@beequeue/typescript",
     
     // Add the prettier preset **at the end** if you use it
