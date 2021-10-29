@@ -43,10 +43,14 @@
   },
   "peerDependencies": {
     "eslint": "^8",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "graphql": "^15"
   },
   "peerDependenciesMeta": {
     "prettier": {
+      "optional": true
+    },
+    "graphql": {
       "optional": true
     }
   },
