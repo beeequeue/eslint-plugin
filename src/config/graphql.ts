@@ -8,7 +8,13 @@ const getConfig = (client: boolean): Linter.BaseConfig<ESLintRules> => {
   return {
     overrides: [
       {
+        files: ["**/*.{js,jsx,ts,tsx}"],
+        processor: "@graphql-eslint/graphql",
+      },
+      {
         files: ["**/*.graphql"],
+        parser: "@graphql-eslint/eslint-plugin",
+        plugins: ["@graphql-eslint"],
         extends: [
           /**
            * Adds GraphQL plugin, parser, rules
