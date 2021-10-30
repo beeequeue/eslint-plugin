@@ -1,5 +1,26 @@
 # @beequeue/eslint-plugin
 
+## 0.4.0
+
+### Minor Changes
+
+- [#20](https://github.com/BeeeQueue/eslint-plugin/pull/20) [`dc043a3`](https://github.com/BeeeQueue/eslint-plugin/commit/dc043a358bd13cca7ff99ad48cda6de3033dff3f) - Added `graphql-client` and `graphql-server` presets
+
+* [#18](https://github.com/BeeeQueue/eslint-plugin/pull/18) [`2191105`](https://github.com/BeeeQueue/eslint-plugin/commit/21911053cc13407ccae512bde17a15a7f303c576) - Updated ESLint to v8
+
+- [#18](https://github.com/BeeeQueue/eslint-plugin/pull/18) [`2191105`](https://github.com/BeeeQueue/eslint-plugin/commit/21911053cc13407ccae512bde17a15a7f303c576) - Enabled new rules:
+
+  - `base`
+    - `unicorn/template-indent`
+  - `typescript`
+    - `@typescript-eslint/consistent-type-exports`
+  - `vue`
+    - `vue/no-useless-template-attributes`
+    - `vue/no-computed-properties-in-data`
+    - `vue/no-deprecated-router-link-tag-prop`
+
+* [#18](https://github.com/BeeeQueue/eslint-plugin/pull/18) [`2191105`](https://github.com/BeeeQueue/eslint-plugin/commit/21911053cc13407ccae512bde17a15a7f303c576) - Updated plugins
+
 ## 0.3.0
 
 ### Minor Changes
