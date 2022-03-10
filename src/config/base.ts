@@ -79,6 +79,13 @@ export const base: Linter.BaseConfig<ESLintRules> = {
         case: "kebabCase",
       },
     ],
+    /** Enforce exporting directly rather than importing then exporting, unless the value is used */
+    "unicorn/prefer-export-from": [
+      "error",
+      {
+        ignoreUsedVariables: true,
+      },
+    ],
 
     /* IMPORT PLUGIN */
 
