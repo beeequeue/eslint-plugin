@@ -87,6 +87,15 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
             selector: "objectLiteralProperty",
             format: ["camelCase", "PascalCase"],
           },
+          {
+            selector: "objectLiteralProperty",
+            modifiers: ["requiresQuotes"],
+            format: null,
+            custom: {
+              regex: "^[\\da-z]+(?:-[\\da-z]+)*$",
+              match: true,
+            },
+          },
         ],
         /** Require using `type` over `interface` */
         "@typescript-eslint/consistent-type-definitions": ["error", "type"],
