@@ -51,6 +51,8 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         "@typescript-eslint/consistent-type-exports": "off",
         /** Don't warn on implicit function returns */
         "@typescript-eslint/explicit-module-boundary-types": "off",
+        /** Don't allow unions or intersections with types that ruin them (any, unknown, etc.) */
+        "@typescript-eslint/no-redundant-type-constituents": "error",
         /** Require explanations for @ts-ignore:s */
         "@typescript-eslint/ban-ts-comment": [
           "error",

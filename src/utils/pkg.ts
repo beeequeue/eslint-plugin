@@ -8,10 +8,11 @@ export const getPkgJson = (): PackageJson | null => {
   if (cachedPkgJson != null) return cachedPkgJson
 
   try {
-    const contents = readFileSync("./package.json", { encoding: "utf-8" })
+    const contents = readFileSync("./package.json", { encoding: "utf8" })
 
     return JSON.parse(contents)
   } catch {
+    // eslint-disable-next-line no-console
     console.error("Could not load package.json :(")
     return null
   }
@@ -27,6 +28,14 @@ export const isPackageInstalled = (pkg: string) => {
     ...Object.keys(pkgJson.devDependencies ?? {}),
     ...Object.keys(pkgJson.peerDependencies ?? {}),
   ].includes(pkg)
+}
+
+export const assertPackagesInstalled = (packages: string[]) => {
+  for (const pkg of packages) {
+    if (!isPackageInstalled(pkg)) {
+      throw new Error(`'${pkg}' is required but not installed!`)
+    }
+  }
 }
 
 export const getPackageVersion = (pkg: string) => {

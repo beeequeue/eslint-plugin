@@ -1,10 +1,8 @@
-dist
+.idea/
+dist/
 
 # dependencies
-node_modules
-
-# testing
-/coverage
+node_modules/
 
 # next.js
 /.next/
