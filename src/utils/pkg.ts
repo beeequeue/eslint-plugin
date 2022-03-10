@@ -29,6 +29,14 @@ export const isPackageInstalled = (pkg: string) => {
   ].includes(pkg)
 }
 
+export const assertPackagesInstalled = (packages: string[]) => {
+  for (const pkg of packages) {
+    if (!isPackageInstalled(pkg)) {
+      throw new Error(`'${pkg}' is required but not installed!`)
+    }
+  }
+}
+
 export const getPackageVersion = (pkg: string) => {
   const pkgJson = getPkgJson()
 
