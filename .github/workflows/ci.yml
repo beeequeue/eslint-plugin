@@ -7,16 +7,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@master
+        uses: actions/checkout@v3
 
-      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v3
         with:
-          version: 6.19
+          node-version: 14.x
 
-      - uses: actions/setup-node@v2
+      - run: corepack enable
+
+      - uses: actions/cache@v2
         with:
-          node-version: 14.18
-          cache: pnpm
+          path: ~/.pnpm-store
+          key: v1-${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            v1-${{ runner.os }}-pnpm-
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -25,4 +29,4 @@ jobs:
         run: pnpm build
 
       - name: Lint
-        run: pnpm lint
+        run: pnpm lint -- --format compact
