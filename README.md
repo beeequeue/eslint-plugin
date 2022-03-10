@@ -7,16 +7,11 @@ My extensive, opinionated ESLint configs.
 
 Modular config presets that can be mixed and matched!
 
-- [Basic Javascript](./src/config/base.ts): `plugin:@beequeue/base`
+- [Config base (JS)](./src/config/base.ts): `plugin:@beequeue/base`
 - [TypeScript](./src/config/typescript.ts): `plugin:@beequeue/typescript`
 - [Node](./src/config/node.ts): `plugin:@beequeue/node`
-- GraphQL (requires additional configuration, see Usage)
-  - [Client](./src/config/graphql.ts): `plugin:@beequeue/graphql-client`
-  - [Server](./src/config/graphql.ts): `plugin:@beequeue/graphql-server`
 - [React](./src/config/react.ts): `plugin:@beequeue/react`
-  - ~~[NextJS](./src/config/nextjs.ts): `plugin:@beequeue/nextjs`~~
 - [Vue](./src/config/vue.ts): `plugin:@beequeue/vue`
-  - [Vue 2](./src/config/vue2.ts): `plugin:@beequeue/vue2`
 - [Electron](./src/config/electron.ts): `plugin:@beequeue/electron`
 - [Prettier](./src/config/prettier.ts): `plugin:@beequeue/prettier`
 
@@ -43,7 +38,6 @@ module.exports = {
     "plugin:@beequeue/base",
     
     // Any other presets you need
-    "plugin:@beequeue/graphql",
     "plugin:@beequeue/typescript",
     
     // Add the prettier preset **at the end** if you use it
