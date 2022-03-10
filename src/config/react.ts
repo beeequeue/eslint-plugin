@@ -52,6 +52,8 @@ export const react: Linter.BaseConfig<ESLintRules> = {
         "react/no-adjacent-inline-elements": "error",
         /** Don't allow components that are re-created every render */
         "react/no-unstable-nested-components": "error",
+        /** Forbid invalid HTML attributes */
+        "react/no-invalid-html-attribute": "error",
 
         /** Disabled if we're using a version that supports excluding `React` import */
         "react/react-in-jsx-scope":
