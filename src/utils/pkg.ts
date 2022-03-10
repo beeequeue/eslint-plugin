@@ -8,10 +8,11 @@ export const getPkgJson = (): PackageJson | null => {
   if (cachedPkgJson != null) return cachedPkgJson
 
   try {
-    const contents = readFileSync("./package.json", { encoding: "utf-8" })
+    const contents = readFileSync("./package.json", { encoding: "utf8" })
 
     return JSON.parse(contents)
   } catch {
+    // eslint-disable-next-line no-console
     console.error("Could not load package.json :(")
     return null
   }
