@@ -1,5 +1,13 @@
 # @beequeue/eslint-plugin
 
+## 0.5.0
+
+### Minor Changes
+
+- [#21](https://github.com/BeeeQueue/eslint-plugin/pull/21) [`f534918`](https://github.com/BeeeQueue/eslint-plugin/commit/f534918ab04e7a8ab93a07059d095d3db2272335) - Update all plugins and their presets
+
+* [#21](https://github.com/BeeeQueue/eslint-plugin/pull/21) [`f534918`](https://github.com/BeeeQueue/eslint-plugin/commit/f534918ab04e7a8ab93a07059d095d3db2272335) - Removed graphql presets
+
 ## 0.4.0
 
 ### Minor Changes
