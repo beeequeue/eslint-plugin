@@ -25,13 +25,6 @@ Modular config presets that can be mixed and matched!
 // .eslintrc.js
 module.exports = {
   root: true,
-  // If you use a GraphQL preset you need to provide additional data for the plugin to work with
-  parserOptions: {
-    // Path or link to the GraphQL schema
-    schema: "https://graphql.example.com",
-    // If you use the Client preset you also need to provide globs to your operation files
-    operations: ["src/**/*.{js,ts,graphql}"],
-  },
   extends: [
     // The base rules are always required
     "plugin:@beequeue/base",
