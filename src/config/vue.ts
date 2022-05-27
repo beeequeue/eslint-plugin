@@ -16,14 +16,10 @@ export const vue: Linter.BaseConfig<ESLintRules> = {
   rules: {
     /** Allow using v-html to insert html strings. We should know when this is necessary and when it's not. */
     "vue/no-v-html": "off",
-    /** Warn when passing children into a component that overwrites them. */
-    "vue/no-child-content": "error",
     /** Enforce consistent component naming in component options. */
     "vue/component-options-name-casing": "error",
     /** Enforce static classes be in separate class attribute from dynamic ones. */
     "vue/prefer-separate-static-class": "error",
-    /** Forbid using attributes that break components on them. */
-    "vue/no-v-text-v-html-on-component": "error",
     /** Warn when using a component without configuring it in the options. */
     "vue/no-undef-components": "warn",
     /** Enforce using the `true` attribute shorthand. */
@@ -34,9 +30,6 @@ export const vue: Linter.BaseConfig<ESLintRules> = {
     "vue/object-shorthand": "off",
 
     /* Setup support */
-
-    "vue/script-setup-uses-vars": "error",
     "vue/require-expose": "error",
-    "vue/no-expose-after-await": "error",
   },
 }
