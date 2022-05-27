@@ -95,6 +95,9 @@ export const base: Linter.BaseConfig<ESLintRules> = {
 
     /** Extremely slow in some cases */
     "import/no-deprecated": "off",
+    /** Not useful */
+    "import/no-named-as-default": "off",
+    "import/no-named-as-default-member": "off",
     /** Custom import order with quick fix */
     "import/order": [
       "error",
