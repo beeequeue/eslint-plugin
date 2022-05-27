@@ -1,5 +1,17 @@
 # @beequeue/eslint-plugin
 
+## 0.6.0
+
+### Minor Changes
+
+- [`73bfbdb`](https://github.com/BeeeQueue/eslint-plugin/commit/73bfbdbe6265a0bc5299898f0be4b8b91d03c01c) - Moved `prettier` preset into all other configs, removing need to specify it at all!
+
+  To migrate, simply remove `plugin:@beequeue/prettier` from any ESLint configs.
+
+* [`56695e8`](https://github.com/BeeeQueue/eslint-plugin/commit/56695e89b10083d28ef9d6f6446b864c79037052) - Removed `vue2` preset
+
+- [`a3d1826`](https://github.com/BeeeQueue/eslint-plugin/commit/a3d1826d1149aac4d944a35b8949c39303e859ad) - `typescript`: Allow `camel-case` in object properties
+
 ## 0.5.0
 
 ### Minor Changes
