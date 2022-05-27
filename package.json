@@ -37,9 +37,7 @@
     "dev": "yarn build --watch",
     "lint": "yarn eslint \"src/**/*.ts\"",
     "release": "yarn build && yarn changeset publish",
-    "postinstall": "simple-git-hooks",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "prepare": "simple-git-hooks"
   },
   "peerDependencies": {
     "eslint": "^8",
@@ -72,7 +70,6 @@
     "@types/node": "14.18.12",
     "eslint": "8.10.0",
     "lint-staged": "12.3.5",
-    "pinst": "3.0.0",
     "prettier": "2.5.1",
     "simple-git-hooks": "2.7.0",
     "type-fest": "2.12.0",

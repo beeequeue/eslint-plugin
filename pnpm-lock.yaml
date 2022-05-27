@@ -20,7 +20,6 @@ specifiers:
   eslint-plugin-unicorn: 41.0.0
   eslint-plugin-vue: 8.5.0
   lint-staged: 12.3.5
-  pinst: 3.0.0
   prettier: 2.5.1
   simple-git-hooks: 2.7.0
   type-fest: 2.12.0
@@ -48,7 +47,6 @@ devDependencies:
   '@types/node': 14.18.12
   eslint: 8.10.0
   lint-staged: 12.3.5
-  pinst: 3.0.0
   prettier: 2.5.1
   simple-git-hooks: 2.7.0
   type-fest: 2.12.0
@@ -2397,12 +2395,6 @@ packages:
   /pify/4.0.1:
     resolution: {integrity: sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==}
     engines: {node: '>=6'}
-    dev: true
-
-  /pinst/3.0.0:
-    resolution: {integrity: sha512-cengSmBxtCyaJqtRSvJorIIZXMXg+lJ3sIljGmtBGUVonMnMsVJbnzl6jGN1HkOWwxNuJynCJ2hXxxqCQrFDdw==}
-    engines: {node: '>=12.0.0'}
-    hasBin: true
     dev: true
 
   /pkg-dir/4.2.0:
