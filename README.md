@@ -13,7 +13,6 @@ Modular config presets that can be mixed and matched!
 - [React](./src/config/react.ts): `plugin:@beequeue/react`
 - [Vue](./src/config/vue.ts): `plugin:@beequeue/vue`
 - [Electron](./src/config/electron.ts): `plugin:@beequeue/electron`
-- [Prettier](./src/config/prettier.ts): `plugin:@beequeue/prettier`
 
 ---
 

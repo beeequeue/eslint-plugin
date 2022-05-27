@@ -1,6 +1,8 @@
 import { Linter } from "eslint"
 import { ESLintRules } from "eslint/rules"
 
+import { prettierStyleRules } from "../utils/prettier"
+
 export const vue: Linter.BaseConfig<ESLintRules> = {
   extends: [
     /**
@@ -8,6 +10,8 @@ export const vue: Linter.BaseConfig<ESLintRules> = {
      * https://github.com/vuejs/eslint-plugin-vue
      */
     "plugin:vue/vue3-recommended",
+
+    ...prettierStyleRules,
   ],
   rules: {
     /** Allow using v-html to insert html strings. We should know when this is necessary and when it's not. */

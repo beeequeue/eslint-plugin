@@ -1,6 +1,8 @@
 import { Linter } from "eslint"
 import { ESLintRules } from "eslint/rules"
 
+import { prettierStyleRules } from "../utils/prettier"
+
 export const base: Linter.BaseConfig<ESLintRules> = {
   extends: [
     /** ESLint's recommended rules */
@@ -18,6 +20,8 @@ export const base: Linter.BaseConfig<ESLintRules> = {
     "plugin:import/errors",
     /** Adds import plugin, rule prohibiting deprecated imports */
     "plugin:import/stage-0",
+
+    ...prettierStyleRules,
   ],
   settings: {
     /** Mark @/** as internal packages */

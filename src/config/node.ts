@@ -8,6 +8,12 @@ export const node: Linter.BaseConfig<ESLintRules> = {
      * https://github.com/mysticatea/eslint-plugin-node
      */
     "plugin:node/recommended",
+    /**
+     * Disables style rules from other plugins/configs, enables rule for style checking
+     * https://github.com/prettier/eslint-config-prettier
+     */
+    "prettier",
+    "plugin:prettier/recommended",
   ],
   rules: {
     /** Allow console log in servers, but warn since you should be using a proper logger */

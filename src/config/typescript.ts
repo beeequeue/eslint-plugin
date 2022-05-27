@@ -1,10 +1,14 @@
 import { Linter } from "eslint"
 import { ESLintRules } from "eslint/rules"
 
+import { prettierStyleRules } from "../utils/prettier"
+
 export const typescript: Linter.BaseConfig<ESLintRules> = {
   extends: [
     /** Configures import plugin for TypeScript */
     "plugin:import/typescript",
+
+    ...prettierStyleRules,
   ],
   settings: {
     /**

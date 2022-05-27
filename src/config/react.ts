@@ -2,6 +2,7 @@ import { Linter } from "eslint"
 import { ESLintRules } from "eslint/rules"
 
 import { getPackageVersion, isPackageInstalled } from "../utils/pkg"
+import { prettierStyleRules } from "../utils/prettier"
 
 const reactVersion = getPackageVersion("react")
 const isNextInstalled = isPackageInstalled("next")
@@ -20,6 +21,8 @@ export const react: Linter.BaseConfig<ESLintRules> = {
     "plugin:jsx-a11y/recommended",
     /** Configures import plugin for JSX */
     "plugin:import/react",
+
+    ...prettierStyleRules,
   ],
   settings: {
     react: { version: "detect" },
