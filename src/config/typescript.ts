@@ -57,6 +57,8 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         "@typescript-eslint/explicit-module-boundary-types": "off",
         /** Don't allow unions or intersections with types that ruin them (any, unknown, etc.) */
         "@typescript-eslint/no-redundant-type-constituents": "error",
+        /** Enforce using shorter Map constructor syntax */
+        "@typescript-eslint/consistent-generic-constructors": "error",
         /** Require explanations for @ts-ignore:s */
         "@typescript-eslint/ban-ts-comment": [
           "error",
