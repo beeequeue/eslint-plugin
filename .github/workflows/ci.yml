@@ -28,4 +28,4 @@ jobs:
         run: pnpm build
 
       - name: Lint
-        run: pnpm lint -- --format compact
+        run: pnpm lint --format compact
