@@ -16,14 +16,15 @@
   ],
   "repository": "github:BeeeQueue/eslint-plugin",
   "bugs": "https://github.com/BeeeQueue/eslint-plugin/issues",
+  "packageManager": "pnpm@7.8.0",
+  "engines": {
+    "node": ">=14"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "engines": {
-    "node": ">=14"
-  },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
   },
@@ -34,9 +35,9 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "yarn build --watch",
-    "lint": "yarn eslint \"src/**/*.ts\"",
-    "release": "yarn build && yarn changeset publish",
+    "dev": "pnpm build --watch",
+    "lint": "pnpm eslint \"src/**/*.ts\"",
+    "release": "pnpm build && pnpm changeset publish",
     "prepare": "simple-git-hooks"
   },
   "peerDependencies": {
