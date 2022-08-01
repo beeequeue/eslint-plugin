@@ -7,7 +7,7 @@ export const node: Linter.BaseConfig<ESLintRules> = {
      * Adds node plugin, node env, node rules *
      * https://github.com/mysticatea/eslint-plugin-node
      */
-    "plugin:node/recommended",
+    "plugin:n/recommended",
     /**
      * Disables style rules from other plugins/configs, enables rule for style checking
      * https://github.com/prettier/eslint-config-prettier
@@ -19,16 +19,16 @@ export const node: Linter.BaseConfig<ESLintRules> = {
     /** Allow console log in servers, but warn since you should be using a proper logger */
     "no-console": "warn",
     /** Require using path concatenation functions when creating paths */
-    "node/no-path-concat": "error",
+    "n/no-path-concat": "error",
     /** Require using the promise API over the old callback based one */
-    "node/prefer-promises/fs": "error",
+    "n/prefer-promises/fs": "error",
   },
   overrides: [
     {
       files: ["**/*.ts"],
       rules: {
         // TS uses ESM syntax
-        "node/no-unsupported-features/es-syntax": "off",
+        "n/no-unsupported-features/es-syntax": "off",
       },
     },
   ],

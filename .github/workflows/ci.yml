@@ -9,11 +9,10 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v3
+      - uses: BeeeQueue/setup-node@corepack
         with:
+          corepack: true
           node-version: 14.x
-
-      - run: corepack enable
 
       - uses: actions/cache@v2
         with:
@@ -29,4 +28,4 @@ jobs:
         run: pnpm build
 
       - name: Lint
-        run: pnpm lint -- --format compact
+        run: pnpm lint --format compact

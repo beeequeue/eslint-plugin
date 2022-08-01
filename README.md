@@ -20,6 +20,7 @@ Modular config presets that can be mixed and matched!
 
 - `npm i -D @beequeue/eslint-plugin`
 - `yarn add -D @beequeue/eslint-plugin`
+- `pnpm add -D @beequeue/eslint-plugin`
 
 ```js
 // .eslintrc.js

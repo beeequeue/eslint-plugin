@@ -74,6 +74,8 @@ export const base: Linter.BaseConfig<ESLintRules> = {
     "unicorn/no-array-reduce": "off",
     /** Don't require node: prefix for node builtins (breaks TypeScript) */
     "unicorn/prefer-node-protocol": "off",
+    /** Don't require top-level awaits, allow them to be wrapped in stuff so it actually works */
+    "unicorn/prefer-top-level-await": "off",
     /** Enforce correct indentation on template strings */
     "unicorn/template-indent": "error",
     /** Enforce kebab-case in filenames */

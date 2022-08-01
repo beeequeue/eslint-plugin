@@ -57,6 +57,8 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         "@typescript-eslint/explicit-module-boundary-types": "off",
         /** Don't allow unions or intersections with types that ruin them (any, unknown, etc.) */
         "@typescript-eslint/no-redundant-type-constituents": "error",
+        /** Enforce using shorter Map constructor syntax */
+        "@typescript-eslint/consistent-generic-constructors": "error",
         /** Require explanations for @ts-ignore:s */
         "@typescript-eslint/ban-ts-comment": [
           "error",
@@ -112,7 +114,7 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         "no-void": ["error", { allowAsStatement: true }],
 
         /* Does not work with types */
-        "node/no-unpublished-import": "off",
+        "n/no-unpublished-import": "off",
 
         /* Overrides that add TS functionality */
         "@typescript-eslint/no-shadow": "error",
@@ -125,7 +127,7 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         "no-loss-of-precision": "off",
         "no-useless-constructor": "off",
         /** TS uses ESM */
-        "node/no-unsupported-features/es-syntax": "off",
+        "n/no-unsupported-features/es-syntax": "off",
 
         "import/named": "off",
         "import/namespace": "off",
@@ -138,8 +140,8 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         "no-unused-expressions": "off",
         "no-unused-vars": "off",
         "@typescript-eslint/no-unused-vars": "off",
-        "node/no-missing-import": "off",
-        "node/no-extraneous-import": "off",
+        "n/no-missing-import": "off",
+        "n/no-extraneous-import": "off",
         "unicorn/no-array-callback-reference": "off",
       },
     },
