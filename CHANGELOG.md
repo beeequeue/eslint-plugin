@@ -1,5 +1,11 @@
 # @beequeue/eslint-plugin
 
+## 0.7.0
+
+### Minor Changes
+
+- [#25](https://github.com/BeeeQueue/eslint-plugin/pull/25) [`3466b08`](https://github.com/BeeeQueue/eslint-plugin/commit/3466b08849ccf496fc9f03b5679f9c4a3251bbd4) - Update all dependencies
+
 ## 0.6.0
 
 ### Minor Changes
