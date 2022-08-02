@@ -14,7 +14,7 @@ jobs:
           corepack: true
           node-version: 14.x
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: ~/.pnpm-store
           key: v1-${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
