@@ -1,5 +1,17 @@
 # @beequeue/eslint-plugin
 
+## 0.8.0
+
+### Minor Changes
+
+- [#28](https://github.com/BeeeQueue/eslint-plugin/pull/28) [`19a78b6`](https://github.com/BeeeQueue/eslint-plugin/commit/19a78b64ef46ebc47279f8f496c6b4252574b56d) - Removed `@typescript-eslint/naming-convention` rule as it was just annoying and not helpful
+
+- [#28](https://github.com/BeeeQueue/eslint-plugin/pull/28) [`19a78b6`](https://github.com/BeeeQueue/eslint-plugin/commit/19a78b64ef46ebc47279f8f496c6b4252574b56d) - Enabled `ignoreOnInitialization` in `no-shadow`
+
+### Patch Changes
+
+- [#28](https://github.com/BeeeQueue/eslint-plugin/pull/28) [`19a78b6`](https://github.com/BeeeQueue/eslint-plugin/commit/19a78b64ef46ebc47279f8f496c6b4252574b56d) - Support TypeScript 4.8
+
 ## 0.7.0
 
 ### Minor Changes
