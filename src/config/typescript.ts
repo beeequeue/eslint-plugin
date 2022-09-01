@@ -70,39 +70,6 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
             minimumDescriptionLength: 6,
           },
         ],
-        /** Better naming convention rule */
-        "@typescript-eslint/naming-convention": [
-          "error",
-          {
-            selector: "default",
-            format: ["camelCase"],
-            leadingUnderscore: "allow",
-            trailingUnderscore: "allow",
-          },
-          {
-            selector: "variable",
-            format: ["camelCase", "UPPER_CASE", "PascalCase"],
-            leadingUnderscore: "allow",
-            trailingUnderscore: "allow",
-          },
-          {
-            selector: ["typeLike", "enumMember"],
-            format: ["PascalCase"],
-          },
-          {
-            selector: "objectLiteralProperty",
-            format: ["camelCase", "PascalCase"],
-          },
-          {
-            selector: "objectLiteralProperty",
-            modifiers: ["requiresQuotes"],
-            format: null,
-            custom: {
-              regex: "^[\\da-z]+(?:-[\\da-z]+)*$",
-              match: true,
-            },
-          },
-        ],
         /** Require using `type` over `interface` */
         "@typescript-eslint/consistent-type-definitions": ["error", "type"],
         /** Enforce using `x as type` over `<type>x` */
