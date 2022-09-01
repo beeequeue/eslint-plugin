@@ -84,7 +84,7 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         "n/no-unpublished-import": "off",
 
         /* Overrides that add TS functionality */
-        "@typescript-eslint/no-shadow": "error",
+        "@typescript-eslint/no-shadow": ["error", { ignoreOnInitialization: true }],
         "@typescript-eslint/no-loss-of-precision": "error",
         "@typescript-eslint/no-useless-constructor": "error",
 
