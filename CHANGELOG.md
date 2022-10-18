@@ -1,5 +1,15 @@
 # @beequeue/eslint-plugin
 
+## 1.0.0
+
+### Major Changes
+
+- [#30](https://github.com/BeeeQueue/eslint-plugin/pull/30) [`9b4fbd7`](https://github.com/BeeeQueue/eslint-plugin/commit/9b4fbd763fb9970491c56bd90cbd8e3db58abbb3) - First major release!
+
+### Minor Changes
+
+- [#30](https://github.com/BeeeQueue/eslint-plugin/pull/30) [`9b4fbd7`](https://github.com/BeeeQueue/eslint-plugin/commit/9b4fbd763fb9970491c56bd90cbd8e3db58abbb3) - Added some more rules to the `vue` preset
+
 ## 0.8.0
 
 ### Minor Changes
