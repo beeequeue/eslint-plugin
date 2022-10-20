@@ -36,7 +36,7 @@ export const vue: Linter.BaseConfig<ESLintRules> = {
 
     "vue/object-shorthand": "off",
     /** Enforce newlines between tags */
-    "vue/padding-line-between-tags": ["error", { blankLine: "consistent" }],
+    "vue/padding-line-between-tags": ["error", [{ blankLine: "consistent" }]],
 
     /* Setup support */
     "vue/require-expose": "error",
