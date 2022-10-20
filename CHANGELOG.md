@@ -1,5 +1,11 @@
 # @beequeue/eslint-plugin
 
+## 1.0.2
+
+### Patch Changes
+
+- [`2735c3f`](https://github.com/BeeeQueue/eslint-plugin/commit/2735c3f1250a7b01a23ea18df63b5bc4fed9c40b) - Fix incorrect option passed to `vue/padding-line-between-tags`
+
 ## 1.0.1
 
 ### Patch Changes
