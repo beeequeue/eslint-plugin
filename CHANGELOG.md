@@ -1,5 +1,11 @@
 # @beequeue/eslint-plugin
 
+## 1.1.0
+
+### Minor Changes
+
+- [`e5be34a`](https://github.com/BeeeQueue/eslint-plugin/commit/e5be34a0fe118721c4d37736835386ba35ec411c) - `typescript`: Allow returning promises in functions expecting `void`.
+
 ## 1.0.2
 
 ### Patch Changes
