@@ -44,6 +44,13 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
         node: { tryExtensions: [".js", ".ts", ".tsx"] },
       },
       rules: {
+        /** Allow returning a promise when the function expects `void` */
+        "@typescript-eslint/no-misused-promises": [
+          "error",
+          {
+            checksVoidReturn: false,
+          },
+        ],
         /** Don't warn about non-null assertions - assume they're used responsibly */
         "@typescript-eslint/no-non-null-assertion": "off",
         /** Don't error on operating on `any`s - it's way too strict */
