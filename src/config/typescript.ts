@@ -85,7 +85,7 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
           { assertionStyle: "as" },
         ],
         /** Allow void before floating promises */
-        "no-void": ["error", { allowAsStatement: true }],
+        "no-void": ["error", { allowAsStatement: true }] as any,
 
         /* Does not work with types */
         "n/no-unpublished-import": "off",
