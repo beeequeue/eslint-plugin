@@ -78,6 +78,8 @@ export const base: Linter.BaseConfig<ESLintRules> = {
     "unicorn/prefer-top-level-await": "off",
     /** Enforce correct indentation on template strings */
     "unicorn/template-indent": "error",
+    /** Don't enforce positive conditions */
+    "unicorn/no-negated-condition": "off",
     /** Enforce kebab-case in filenames */
     "unicorn/filename-case": [
       "error",
