@@ -1,7 +1,7 @@
 # `@beequeue/eslint-plugin`
 
 [![](https://img.shields.io/npm/v/@beequeue/eslint-plugin)](https://www.npmjs.com/package/@beequeue/eslint-plugin)
-[![](https://img.shields.io/github/workflow/status/BeeeQueue/eslint-plugin/CI?label=build)](https://github.com/BeeeQueue/eslint-plugin/actions?query=branch%3Amain+workflow%3ACI)
+[![](https://img.shields.io/github/actions/workflow/status/BeeeQueue/eslint-plugin/ci.yml?branch=main)](https://github.com/BeeeQueue/eslint-plugin/actions?query=branch%3Amain+workflow%3ACI)
 
 My extensive, opinionated ESLint configs.
 
