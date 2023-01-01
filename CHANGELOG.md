@@ -1,5 +1,11 @@
 # @beequeue/eslint-plugin
 
+## 1.1.2
+
+### Patch Changes
+
+- [#38](https://github.com/BeeeQueue/eslint-plugin/pull/38) [`e49877c`](https://github.com/BeeeQueue/eslint-plugin/commit/e49877cf60c10cfe88f44f643c8686e94cbcafa9) - `base`: Disabled `unicorn/no-negated-condition`
+
 ## 1.1.1
 
 ### Patch Changes
