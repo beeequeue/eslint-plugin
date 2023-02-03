@@ -1,9 +1,8 @@
-import { Linter } from "eslint"
-import { ESLintRules } from "eslint/rules"
+import type { ESLintConfig } from "eslint-define-config"
 
 import { prettierStyleRules } from "../utils/prettier"
 
-export const base: Linter.BaseConfig<ESLintRules> = {
+export const base: ESLintConfig = {
   extends: [
     /** ESLint's recommended rules */
     "eslint:recommended",

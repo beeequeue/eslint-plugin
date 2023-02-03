@@ -1,7 +1,6 @@
-import { Linter } from "eslint"
-import { ESLintRules } from "eslint/rules"
+import type { ESLintConfig } from "eslint-define-config"
 
-export const node: Linter.BaseConfig<ESLintRules> = {
+export const node: ESLintConfig = {
   extends: [
     /**
      * Adds node plugin, node env, node rules *

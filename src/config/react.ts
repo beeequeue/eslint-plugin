@@ -1,5 +1,4 @@
-import { Linter } from "eslint"
-import { ESLintRules } from "eslint/rules"
+import type { ESLintConfig } from "eslint-define-config"
 
 import { getPackageVersion, isPackageInstalled } from "../utils/pkg"
 import { prettierStyleRules } from "../utils/prettier"
@@ -7,7 +6,7 @@ import { prettierStyleRules } from "../utils/prettier"
 const reactVersion = getPackageVersion("react")
 const isNextInstalled = isPackageInstalled("next")
 
-export const react: Linter.BaseConfig<ESLintRules> = {
+export const react: ESLintConfig = {
   extends: [
     /**
      * Configures JSX settings, adds react rules
