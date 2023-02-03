@@ -51,6 +51,8 @@ export const base: ESLintConfig = {
     "no-loss-of-precision": "error",
     /** Require no-bracket blocks to be one-liners */
     "nonblock-statement-body-position": ["error", "beside"],
+    /** Prefer named regex capture groups for clarity */
+    "prefer-named-capture-group": "error",
 
     /* UNICORN PLUGIN */
 
