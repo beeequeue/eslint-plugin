@@ -59,6 +59,7 @@ export const react: ESLintConfig = {
 
         /** Disabled if we're using a version that supports excluding `React` import */
         "react/react-in-jsx-scope":
+          reactVersion?.includes("18") ||
           reactVersion?.includes("17") ||
           reactVersion?.includes("16.14") ||
           isNextInstalled
