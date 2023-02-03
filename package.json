@@ -16,7 +16,7 @@
   ],
   "repository": "github:BeeeQueue/eslint-plugin",
   "bugs": "https://github.com/BeeeQueue/eslint-plugin/issues",
-  "packageManager": "pnpm@7.21.0",
+  "packageManager": "pnpm@7.26.3",
   "engines": {
     "node": ">=14"
   },
