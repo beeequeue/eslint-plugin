@@ -16,9 +16,9 @@
   ],
   "repository": "github:BeeeQueue/eslint-plugin",
   "bugs": "https://github.com/BeeeQueue/eslint-plugin/issues",
-  "packageManager": "pnpm@7.26.3",
+  "packageManager": "pnpm@8.0.0-alpha.0",
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -42,8 +42,8 @@
     "prepare": "simple-git-hooks"
   },
   "peerDependencies": {
-    "eslint": "^8.29.0",
-    "prettier": "^2.8.1"
+    "eslint": "^8.34.0",
+    "prettier": "^2.8.4"
   },
   "peerDependenciesMeta": {
     "prettier": {
