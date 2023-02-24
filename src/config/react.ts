@@ -1,10 +1,6 @@
 import type { ESLintConfig } from "eslint-define-config"
 
-import { getPackageVersion, isPackageInstalled } from "../utils/pkg"
 import { prettierStyleRules } from "../utils/prettier"
-
-const reactVersion = getPackageVersion("react")
-const isNextInstalled = isPackageInstalled("next")
 
 export const react: ESLintConfig = {
   extends: [
@@ -56,15 +52,6 @@ export const react: ESLintConfig = {
         "react/no-unstable-nested-components": "error",
         /** Forbid invalid HTML attributes */
         "react/no-invalid-html-attribute": "error",
-
-        /** Disabled if we're using a version that supports excluding `React` import */
-        "react/react-in-jsx-scope":
-          reactVersion?.includes("18") ||
-          reactVersion?.includes("17") ||
-          reactVersion?.includes("16.14") ||
-          isNextInstalled
-            ? "off"
-            : "error",
       },
     },
   ],
