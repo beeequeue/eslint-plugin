@@ -1,5 +1,19 @@
 # @beequeue/eslint-plugin
 
+## 2.0.0
+
+### Major Changes
+
+- [#41](https://github.com/BeeeQueue/eslint-plugin/pull/41) [`ea407ce`](https://github.com/BeeeQueue/eslint-plugin/commit/ea407ce677e0bc82f6eba6bd3198d1ac2ac9a5f9) - Require Node >=16
+
+### Minor Changes
+
+- [#41](https://github.com/BeeeQueue/eslint-plugin/pull/41) [`ea407ce`](https://github.com/BeeeQueue/eslint-plugin/commit/ea407ce677e0bc82f6eba6bd3198d1ac2ac9a5f9) - You can now specify TS project with `parserOptions: true` instead of a path to the tsconfig file!
+
+### Patch Changes
+
+- [#41](https://github.com/BeeeQueue/eslint-plugin/pull/41) [`ea407ce`](https://github.com/BeeeQueue/eslint-plugin/commit/ea407ce677e0bc82f6eba6bd3198d1ac2ac9a5f9) - Updated dependencies without major changes
+
 ## 1.1.2
 
 ### Patch Changes
