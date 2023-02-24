@@ -1,13 +1,8 @@
-import { Linter } from "eslint"
-import { ESLintRules } from "eslint/rules"
+import type { ESLintConfig } from "eslint-define-config"
 
-import { getPackageVersion, isPackageInstalled } from "../utils/pkg"
 import { prettierStyleRules } from "../utils/prettier"
 
-const reactVersion = getPackageVersion("react")
-const isNextInstalled = isPackageInstalled("next")
-
-export const react: Linter.BaseConfig<ESLintRules> = {
+export const react: ESLintConfig = {
   extends: [
     /**
      * Configures JSX settings, adds react rules
@@ -42,7 +37,7 @@ export const react: Linter.BaseConfig<ESLintRules> = {
         /** Self-explanatory */
         "react/default-props-match-prop-types": "error",
         /** https://github.com/facebook/react/issues/10810#issuecomment-332067094 */
-        // TODO: in react plugin 7.27 "react/no-arrow-function-lifecycle": "error",
+        "react/no-arrow-function-lifecycle": "error",
         /** Require components to use arrow syntax, except if we need a named function to get a named component */
         "react/function-component-definition": [
           "error",
@@ -57,14 +52,6 @@ export const react: Linter.BaseConfig<ESLintRules> = {
         "react/no-unstable-nested-components": "error",
         /** Forbid invalid HTML attributes */
         "react/no-invalid-html-attribute": "error",
-
-        /** Disabled if we're using a version that supports excluding `React` import */
-        "react/react-in-jsx-scope":
-          reactVersion?.includes("17") ||
-          reactVersion?.includes("16.14") ||
-          isNextInstalled
-            ? "off"
-            : "error",
       },
     },
   ],

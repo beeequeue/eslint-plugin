@@ -1,9 +1,8 @@
-import { Linter } from "eslint"
-import { ESLintRules } from "eslint/rules"
+import type { ESLintConfig } from "eslint-define-config"
 
 import { prettierStyleRules } from "../utils/prettier"
 
-export const typescript: Linter.BaseConfig<ESLintRules> = {
+export const typescript: ESLintConfig = {
   extends: [
     /** Configures import plugin for TypeScript */
     "plugin:import/typescript",
@@ -85,7 +84,7 @@ export const typescript: Linter.BaseConfig<ESLintRules> = {
           { assertionStyle: "as" },
         ],
         /** Allow void before floating promises */
-        "no-void": ["error", { allowAsStatement: true }] as any,
+        "no-void": ["error", { allowAsStatement: true }],
 
         /* Does not work with types */
         "n/no-unpublished-import": "off",

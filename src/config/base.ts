@@ -1,9 +1,8 @@
-import { Linter } from "eslint"
-import { ESLintRules } from "eslint/rules"
+import type { ESLintConfig } from "eslint-define-config"
 
 import { prettierStyleRules } from "../utils/prettier"
 
-export const base: Linter.BaseConfig<ESLintRules> = {
+export const base: ESLintConfig = {
   extends: [
     /** ESLint's recommended rules */
     "eslint:recommended",
@@ -52,6 +51,8 @@ export const base: Linter.BaseConfig<ESLintRules> = {
     "no-loss-of-precision": "error",
     /** Require no-bracket blocks to be one-liners */
     "nonblock-statement-body-position": ["error", "beside"],
+    /** Prefer named regex capture groups for clarity */
+    "prefer-named-capture-group": "error",
 
     /* UNICORN PLUGIN */
 

@@ -1,7 +1,6 @@
-import { Linter } from "eslint"
-import { ESLintRules } from "eslint/rules"
+import type { ESLintConfig } from "eslint-define-config"
 
-export const electron: Linter.BaseConfig<ESLintRules> = {
+export const electron: ESLintConfig = {
   extends: [
     /** Configures import plugin for Electron */
     "plugin:import/electron",

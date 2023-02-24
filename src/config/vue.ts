@@ -1,9 +1,8 @@
-import { Linter } from "eslint"
-import { ESLintRules } from "eslint/rules"
+import type { ESLintConfig } from "eslint-define-config"
 
 import { prettierStyleRules } from "../utils/prettier"
 
-export const vue: Linter.BaseConfig<ESLintRules> = {
+export const vue: ESLintConfig = {
   extends: [
     /**
      * Enables plugin, adds recommended rules
