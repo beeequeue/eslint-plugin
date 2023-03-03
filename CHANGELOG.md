@@ -1,5 +1,11 @@
 # @beequeue/eslint-plugin
 
+## 2.0.1
+
+### Patch Changes
+
+- [`ea270c8`](https://github.com/BeeeQueue/eslint-plugin/commit/ea270c86850df0c6ee0e8e448f599828ee36ca60) - Reduced `prefer-named-capture-group` to a warning
+
 ## 2.0.0
 
 ### Major Changes
