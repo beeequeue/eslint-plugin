@@ -52,7 +52,7 @@ export const base: ESLintConfig = {
     /** Require no-bracket blocks to be one-liners */
     "nonblock-statement-body-position": ["error", "beside"],
     /** Prefer named regex capture groups for clarity */
-    "prefer-named-capture-group": "error",
+    "prefer-named-capture-group": "warn",
 
     /* UNICORN PLUGIN */
 
