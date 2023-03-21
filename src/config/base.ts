@@ -2,7 +2,7 @@ import type { ESLintConfig } from "eslint-define-config"
 
 import { prettierStyleRules } from "../utils/prettier"
 
-export const base: ESLintConfig = {
+export const base = {
   extends: [
     /** ESLint's recommended rules */
     "eslint:recommended",
@@ -147,4 +147,4 @@ export const base: ESLintConfig = {
       },
     ],
   },
-}
+} satisfies ESLintConfig

@@ -2,7 +2,7 @@ import type { ESLintConfig } from "eslint-define-config"
 
 import { prettierStyleRules } from "../utils/prettier"
 
-export const react: ESLintConfig = {
+export const react = {
   extends: [
     /**
      * Configures JSX settings, adds react rules
@@ -55,4 +55,4 @@ export const react: ESLintConfig = {
       },
     },
   ],
-}
+} satisfies ESLintConfig

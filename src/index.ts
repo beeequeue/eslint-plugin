@@ -1,3 +1,5 @@
+import type { ESLint } from "eslint"
+
 import { base } from "./config/base"
 import { electron } from "./config/electron"
 import { node } from "./config/node"
@@ -14,4 +16,4 @@ export = {
     typescript,
     vue,
   },
-}
+} satisfies ESLint.Plugin
