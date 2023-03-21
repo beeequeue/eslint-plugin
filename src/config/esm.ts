@@ -6,7 +6,7 @@ export const esm = {
   extends: [...prettierStyleRules],
   plugins: ["@beequeue"],
   rules: {
-    "import/extensions": "error",
+    "import/extensions": "off",
     "unicorn/prefer-module": "error",
     "unicorn/prefer-node-protocol": "error",
     "@beequeue/esm-extensions": "error",
