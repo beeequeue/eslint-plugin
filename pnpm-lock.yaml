@@ -48,9 +48,12 @@ devDependencies:
   '@changesets/cli':
     specifier: 2.26.0
     version: 2.26.0
-  '@tsconfig/node14':
+  '@tsconfig/node16':
     specifier: 1.0.3
     version: 1.0.3
+  '@tsconfig/strictest':
+    specifier: 1.0.2
+    version: 1.0.2
   '@types/eslint':
     specifier: 8.21.3
     version: 8.21.3
@@ -408,8 +411,12 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /@tsconfig/node14@1.0.3:
-    resolution: {integrity: sha512-ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoYlM2nc6388Fq5jcXyr5mRsqViLx/GJYdoL0bfXD8nmF+Zn/Iow==}
+  /@tsconfig/node16@1.0.3:
+    resolution: {integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==}
+    dev: true
+
+  /@tsconfig/strictest@1.0.2:
+    resolution: {integrity: sha512-IRKlC8cnP7zMz1SDBjyIVyPapkEGWLZ6wkF6Z8T+xU80P9sO5uGXlIUvtzjx+7ehPJRWxkB6CeIDwUfyqNtYkQ==}
     dev: true
 
   /@types/eslint@8.21.3:
