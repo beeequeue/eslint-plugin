@@ -1,5 +1,17 @@
 # @beequeue/eslint-plugin
 
+## 2.1.0
+
+### Minor Changes
+
+- [#44](https://github.com/BeeeQueue/eslint-plugin/pull/44) [`564855d`](https://github.com/BeeeQueue/eslint-plugin/commit/564855da3efb2386551666b3810a5eb6ddc30fe1) - Added `esm-extensions` rule for automatically adding `.js` extensions to files.
+
+- [#44](https://github.com/BeeeQueue/eslint-plugin/pull/44) [`564855d`](https://github.com/BeeeQueue/eslint-plugin/commit/564855da3efb2386551666b3810a5eb6ddc30fe1) - Added `esm` preset for ESM projects.
+
+### Patch Changes
+
+- [#44](https://github.com/BeeeQueue/eslint-plugin/pull/44) [`564855d`](https://github.com/BeeeQueue/eslint-plugin/commit/564855da3efb2386551666b3810a5eb6ddc30fe1) - Replaced `eslint-plugin-import` with faster `eslint-plugin-i`.
+
 ## 2.0.1
 
 ### Patch Changes
