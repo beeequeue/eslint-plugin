@@ -1,6 +1,6 @@
 import type { ESLintConfig } from "eslint-define-config"
 
-export const node: ESLintConfig = {
+export const node = {
   extends: [
     /**
      * Adds node plugin, node env, node rules *
@@ -31,4 +31,4 @@ export const node: ESLintConfig = {
       },
     },
   ],
-}
+} satisfies ESLintConfig
