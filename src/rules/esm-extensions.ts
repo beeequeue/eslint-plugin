@@ -8,11 +8,11 @@ const createRule = ESLintUtils.RuleCreator(
   (name) => `https://github.com/BeeeQueue/eslint-plugin/blob/main/src/rules/${name}.ts`,
 )
 
-const isInternalImport = (path: string) =>
-  path.startsWith("./") ||
-  path.startsWith("../") ||
-  path.startsWith("@/") ||
-  path.startsWith("~/")
+const isInternalImport = (importPath: string) =>
+  importPath.startsWith("./") ||
+  importPath.startsWith("../") ||
+  importPath.startsWith("@/") ||
+  importPath.startsWith("~/")
 
 const fix =
   (node: ImportDeclaration): ReportFixFunction =>

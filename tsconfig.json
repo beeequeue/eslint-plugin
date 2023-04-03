@@ -17,6 +17,7 @@
     "noPropertyAccessFromIndexSignature": false,
     "noUncheckedIndexedAccess": false,
     "exactOptionalPropertyTypes": false,
+    "verbatimModuleSyntax": false,
 
     // Extra types
     "types": ["node"]
