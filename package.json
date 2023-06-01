@@ -58,10 +58,10 @@
     "eslint-import-resolver-typescript": "3.5.5",
     "eslint-plugin-import": "npm:eslint-plugin-i@2.27.5",
     "eslint-plugin-jsx-a11y": "6.7.1",
-    "eslint-plugin-n": "15.7.0",
+    "eslint-plugin-n": "16.0.0",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.32.2",
-    "eslint-plugin-unicorn": "46.0.0",
+    "eslint-plugin-unicorn": "47.0.0",
     "eslint-plugin-vue": "9.14.1"
   },
   "devDependencies": {
