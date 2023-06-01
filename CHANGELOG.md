@@ -1,5 +1,13 @@
 # @beequeue/eslint-plugin
 
+## 2.1.1
+
+### Patch Changes
+
+- [`7c91bed`](https://github.com/BeeeQueue/eslint-plugin/commit/7c91beda7e79d4f78647fdb43cab627f78bedd68) - Update dependencies and plugins
+
+- [`7c91bed`](https://github.com/BeeeQueue/eslint-plugin/commit/7c91beda7e79d4f78647fdb43cab627f78bedd68) - Fixed error with todo comments rule
+
 ## 2.1.0
 
 ### Minor Changes
