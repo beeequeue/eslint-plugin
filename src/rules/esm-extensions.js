@@ -1,27 +1,20 @@
 import path from "path"
 
-import { ImportDeclaration } from "@typescript-eslint/types/dist/generated/ast-spec"
 import { ESLintUtils } from "@typescript-eslint/utils"
-import type { ReportFixFunction } from "@typescript-eslint/utils/dist/ts-eslint"
 
 const createRule = ESLintUtils.RuleCreator(
   (name) => `https://github.com/BeeeQueue/eslint-plugin/blob/main/src/rules/${name}.ts`,
 )
 
-const isInternalImport = (importPath: string) =>
+/**
+ * @param {string} importPath
+ * @returns {boolean}
+ */
+const isInternalImport = (importPath) =>
   importPath.startsWith("./") ||
   importPath.startsWith("../") ||
   importPath.startsWith("@/") ||
   importPath.startsWith("~/")
-
-const fix =
-  (node: ImportDeclaration): ReportFixFunction =>
-  (fixer) => {
-    const range = [...node.source.range] as [number, number]
-    range[1] -= 1
-
-    return fixer.insertTextAfterRange(range, ".js")
-  }
 
 export const esmExtensions = createRule({
   name: "esm-extensions",
@@ -31,7 +24,8 @@ export const esmExtensions = createRule({
     messages: {
       "no-dot-js": "Missing .js extension.",
     },
-    docs: null as any,
+    /** @type any */
+    docs: null,
     schema: {},
   },
   defaultOptions: [],
@@ -46,7 +40,13 @@ export const esmExtensions = createRule({
 
       ctx.report({
         messageId: "no-dot-js",
-        fix: fix(node),
+        fix: (fixer) => {
+          /** @type [number, number] */
+          const range = [...node.source.range]
+          range[1] -= 1
+
+          return fixer.insertTextAfterRange(range, ".js")
+        },
         loc: {
           start: {
             line: node.source.loc.start.line,

@@ -1,5 +1,4 @@
-import type { ESLintConfig } from "eslint-define-config"
-
+/** @type import("eslint-define-config").ESLintConfig */
 export const node = {
   extends: [
     /**
@@ -31,4 +30,4 @@ export const node = {
       },
     },
   ],
-} satisfies ESLintConfig
+}

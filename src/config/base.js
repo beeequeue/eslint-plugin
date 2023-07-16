@@ -1,7 +1,6 @@
-import type { ESLintConfig } from "eslint-define-config"
+import { prettierStyleRules } from "../utils/prettier.js"
 
-import { prettierStyleRules } from "../utils/prettier"
-
+/** @type import("eslint-define-config").ESLintConfig */
 export const base = {
   extends: [
     /** ESLint's recommended rules */
@@ -23,7 +22,7 @@ export const base = {
     ...prettierStyleRules,
   ],
   settings: {
-    /** Mark @/** as internal packages */
+    /** Mark "@/**" as internal packages */
     "import/internal-regex": "^@.*?/.*?/.*",
   },
   rules: {
@@ -147,4 +146,4 @@ export const base = {
       },
     ],
   },
-} satisfies ESLintConfig
+}

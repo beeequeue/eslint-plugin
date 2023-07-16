@@ -1,14 +1,10 @@
 {
   "extends": ["@tsconfig/node16/tsconfig.json", "@tsconfig/strictest/tsconfig.json"],
   "compilerOptions": {
-    // Output
-    "outDir": "dist",
-    "sourceMap": true,
-    "declaration": true,
+    "allowJs": true,
+    "noEmit": true,
 
     // Modules
-    "module": "commonjs",
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "esModuleInterop": true,
 
@@ -23,6 +19,6 @@
     // Extra types
     "types": ["node"]
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["src/*.js"],
   "exclude": ["node_modules", "dist/**/*"]
 }

@@ -1,8 +1,7 @@
-import type { ESLintConfig } from "eslint-define-config"
-
+/** @type import("eslint-define-config").ESLintConfig */
 export const electron = {
   extends: [
     /** Configures import plugin for Electron */
     "plugin:import/electron",
   ],
-} satisfies ESLintConfig
+}

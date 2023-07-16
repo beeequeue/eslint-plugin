@@ -1,7 +1,6 @@
-import type { ESLintConfig } from "eslint-define-config"
+import { prettierStyleRules } from "../utils/prettier.js"
 
-import { prettierStyleRules } from "../utils/prettier"
-
+/** @type import("eslint-define-config").ESLintConfig */
 export const typescript = {
   extends: [
     /** Configures import plugin for TypeScript */
@@ -137,4 +136,4 @@ export const typescript = {
       },
     },
   ],
-} satisfies ESLintConfig
+}

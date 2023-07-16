@@ -1,7 +1,6 @@
-import type { ESLintConfig } from "eslint-define-config"
+import { prettierStyleRules } from "../utils/prettier.js"
 
-import { prettierStyleRules } from "../utils/prettier"
-
+/** @type import("eslint-define-config").ESLintConfig */
 export const vue = {
   extends: [
     /**
@@ -43,4 +42,4 @@ export const vue = {
     /* Setup support */
     "vue/require-expose": "error",
   },
-} satisfies ESLintConfig
+}

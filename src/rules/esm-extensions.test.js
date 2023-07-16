@@ -1,6 +1,6 @@
 import { ESLintUtils } from "@typescript-eslint/utils"
 
-import { esmExtensions } from "./esm-extensions"
+import { esmExtensions } from "./esm-extensions.js"
 
 const ruleTester = new ESLintUtils.RuleTester({
   parser: "@typescript-eslint/parser",

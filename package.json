@@ -1,5 +1,6 @@
 {
   "name": "@beequeue/eslint-plugin",
+  "type": "module",
   "version": "2.1.1",
   "description": "My opinionated, modular ESLint configs",
   "author": "BeeeQueue",
@@ -20,10 +21,9 @@
   "engines": {
     "node": ">=16"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.js",
   "files": [
-    "dist"
+    "src"
   ],
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
@@ -71,7 +71,7 @@
     "@tsconfig/node16": "16.1.0",
     "@tsconfig/strictest": "2.0.1",
     "@types/eslint": "8.40.0",
-    "@types/node": "16.18.34",
+    "@types/node": "16.18.38",
     "eslint": "8.41.0",
     "eslint-define-config": "1.20.0",
     "lint-staged": "13.2.3",

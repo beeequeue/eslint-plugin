@@ -62,7 +62,7 @@ jobs:
 
       - run: pnpm typecheck
 
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -87,4 +87,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - run: pnpm build
+      - run: pnpm test
+        env:
+          NODE_ENV: test

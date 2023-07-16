@@ -7,12 +7,12 @@ My extensive, opinionated ESLint configs.
 
 Modular config presets that can be mixed and matched!
 
-- [Config base (JS)](./src/config/base.ts): `plugin:@beequeue/base`
-- [TypeScript](./src/config/typescript.ts): `plugin:@beequeue/typescript`
-- [Node](./src/config/node.ts): `plugin:@beequeue/node`
-- [React](./src/config/react.ts): `plugin:@beequeue/react`
-- [Vue](./src/config/vue.ts): `plugin:@beequeue/vue`
-- [Electron](./src/config/electron.ts): `plugin:@beequeue/electron`
+- [Config base (JS)](./src/config/base.js): `plugin:@beequeue/base`
+- [TypeScript](./src/config/typescript.js): `plugin:@beequeue/typescript`
+- [Node](./src/config/node.js): `plugin:@beequeue/node`
+- [React](./src/config/react.js): `plugin:@beequeue/react`
+- [Vue](./src/config/vue.js): `plugin:@beequeue/vue`
+- [Electron](./src/config/electron.js): `plugin:@beequeue/electron`
 
 ---
 

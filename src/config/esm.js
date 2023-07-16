@@ -1,7 +1,6 @@
-import type { ESLintConfig } from "eslint-define-config"
+import { prettierStyleRules } from "../utils/prettier.js"
 
-import { prettierStyleRules } from "../utils/prettier"
-
+/** @type import("eslint-define-config").ESLintConfig */
 export const esm = {
   extends: [...prettierStyleRules],
   plugins: ["@beequeue"],
@@ -11,4 +10,4 @@ export const esm = {
     "unicorn/prefer-node-protocol": "error",
     "@beequeue/esm-extensions": "error",
   },
-} satisfies ESLintConfig
+}

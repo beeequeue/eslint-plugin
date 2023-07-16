@@ -1,10 +1,12 @@
 import { readFileSync } from "fs"
 
-import type { PackageJson } from "type-fest"
+/** @type import("type-fest").PackageJson | null */
+const cachedPkgJson = null
 
-const cachedPkgJson: PackageJson | null = null
-
-export const getPkgJson = (): PackageJson | null => {
+/**
+ * @returns import("type-fest").PackageJson | null
+ */
+export const getPkgJson = () => {
   if (cachedPkgJson != null) return cachedPkgJson
 
   try {
@@ -18,7 +20,11 @@ export const getPkgJson = (): PackageJson | null => {
   }
 }
 
-export const isPackageInstalled = (pkg: string) => {
+/**
+ * @param {string} pkg
+ * @return {boolean}
+ */
+export const isPackageInstalled = (pkg) => {
   const pkgJson = getPkgJson()
 
   if (pkgJson == null) return false
@@ -30,7 +36,11 @@ export const isPackageInstalled = (pkg: string) => {
   ].includes(pkg)
 }
 
-export const assertPackagesInstalled = (packages: string[]) => {
+/**
+ * @param {string[]} packages
+ * @return {boolean}
+ */
+export const assertPackagesInstalled = (packages) => {
   for (const pkg of packages) {
     if (!isPackageInstalled(pkg)) {
       throw new Error(`'${pkg}' is required but not installed!`)
@@ -38,7 +48,11 @@ export const assertPackagesInstalled = (packages: string[]) => {
   }
 }
 
-export const getPackageVersion = (pkg: string) => {
+/**
+ * @param {string} pkg
+ * @return {string | null}
+ */
+export const getPackageVersion = (pkg) => {
   const pkgJson = getPkgJson()
 
   if (pkgJson == null) return null
