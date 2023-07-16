@@ -16,7 +16,7 @@
   ],
   "repository": "github:BeeeQueue/eslint-plugin",
   "bugs": "https://github.com/BeeeQueue/eslint-plugin/issues",
-  "packageManager": "pnpm@8.6.0",
+  "packageManager": "pnpm@8.6.7",
   "engines": {
     "node": ">=16"
   },
@@ -67,17 +67,17 @@
   "devDependencies": {
     "@beequeue/eslint-plugin": "link:",
     "@changesets/changelog-github": "0.4.8",
-    "@changesets/cli": "2.26.1",
-    "@tsconfig/node16": "1.0.4",
+    "@changesets/cli": "2.26.2",
+    "@tsconfig/node16": "16.1.0",
     "@tsconfig/strictest": "2.0.1",
     "@types/eslint": "8.40.0",
     "@types/node": "16.18.34",
     "eslint": "8.41.0",
     "eslint-define-config": "1.20.0",
-    "lint-staged": "13.2.2",
+    "lint-staged": "13.2.3",
     "prettier": "2.8.8",
     "simple-git-hooks": "2.8.1",
-    "type-fest": "3.11.1",
-    "typescript": "5.1.3"
+    "type-fest": "4.0.0",
+    "typescript": "5.1.6"
   }
 }
