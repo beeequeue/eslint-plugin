@@ -26,7 +26,7 @@ export const esmExtensions = createRule({
     },
     /** @type any */
     docs: null,
-    schema: {},
+    schema: [],
   },
   defaultOptions: [],
   create: (ctx) => ({
