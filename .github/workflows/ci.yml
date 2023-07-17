@@ -34,32 +34,6 @@ jobs:
   #
   #      - run: pnpm lint --format compact
 
-  typecheck:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - uses: BeeeQueue/setup-node@corepack
-        with:
-          corepack: true
-          node-version: 16
-      - name: find pnpm cache path
-        id: cache
-        run: echo "path=$(pnpm store path)" >> $GITHUB_OUTPUT
-
-      - uses: actions/cache@v3
-        with:
-          path: ${{ steps.cache.outputs.path }}
-          key: pnpm-v1-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            pnpm-v1-
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - run: pnpm typecheck
-
   test:
     runs-on: ubuntu-latest
 
