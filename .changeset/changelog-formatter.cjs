@@ -9,6 +9,6 @@ exports.default = {
   getReleaseLine: async (...options) => {
     const line = await baseFunctions.getReleaseLine(...options)
 
-    return line.replace(/Thanks \[@BeeeQueue.*?!/g, "")
+    return line.replaceAll(/Thanks \[@BeeeQueue.*?!/g, "")
   },
 }
