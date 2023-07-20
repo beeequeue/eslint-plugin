@@ -30,6 +30,8 @@ export const vue = {
     /** Use correct style for defining props and emits */
     "vue/define-props-declaration": "error",
     "vue/define-emits-declaration": "error",
+    /** Require strict types on refs */
+    "vue/require-typed-ref ": "error",
 
     /* Style rules */
 

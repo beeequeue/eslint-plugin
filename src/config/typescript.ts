@@ -26,11 +26,13 @@ export const typescript = {
          * https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin
          */
         "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:@typescript-eslint/recommended-type-checked",
+        "plugin:@typescript-eslint/stylistic",
+        "plugin:@typescript-eslint/stylistic-type-checked",
       ],
       parserOptions: {
         extraFileExtensions: [".vue"],
-        project: "**/tsconfig.json",
+        project: true,
         warnOnUnsupportedTypeScriptVersion: false,
       },
       settings: {
@@ -85,6 +87,18 @@ export const typescript = {
         ],
         /** Allow void before floating promises */
         "no-void": ["error", { allowAsStatement: true }],
+        /** Automatically format Array types to most readable version depending on complexity */
+        "@typescript-eslint/array-type": [
+          "error",
+          {
+            default: "array-simple",
+            readonly: "array-simple",
+          },
+        ],
+        /** Allow comparing Enums with primitive values */
+        "@typescript-eslint/no-unsafe-enum-comparison": "off",
+        /** Allow using `any` as a parameter */
+        "@typescript-eslint/no-unsafe-argument": "off",
 
         /* Does not work with types */
         "n/no-unpublished-import": "off",
