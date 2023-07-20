@@ -1,11 +1,12 @@
+/* eslint-disable @typescript-eslint/no-explicit-any,@typescript-eslint/no-unsafe-argument */
 import path from "path"
 
-import { ImportDeclaration } from "@typescript-eslint/types/dist/generated/ast-spec"
+// @ts-expect-error: Broken types
 import { ESLintUtils } from "@typescript-eslint/utils"
-import type { ReportFixFunction } from "@typescript-eslint/utils/dist/ts-eslint"
 
 const createRule = ESLintUtils.RuleCreator(
-  (name) => `https://github.com/BeeeQueue/eslint-plugin/blob/main/src/rules/${name}.ts`,
+  (name: string) =>
+    `https://github.com/BeeeQueue/eslint-plugin/blob/main/src/rules/${name}.ts`,
 )
 
 const isInternalImport = (importPath: string) =>
@@ -13,15 +14,6 @@ const isInternalImport = (importPath: string) =>
   importPath.startsWith("../") ||
   importPath.startsWith("@/") ||
   importPath.startsWith("~/")
-
-const fix =
-  (node: ImportDeclaration): ReportFixFunction =>
-  (fixer) => {
-    const range = [...node.source.range] as [number, number]
-    range[1] -= 1
-
-    return fixer.insertTextAfterRange(range, ".js")
-  }
 
 export const esmExtensions = createRule({
   name: "esm-extensions",
@@ -31,12 +23,12 @@ export const esmExtensions = createRule({
     messages: {
       "no-dot-js": "Missing .js extension.",
     },
-    docs: null as any,
-    schema: {},
+    docs: null as never,
+    schema: [],
   },
   defaultOptions: [],
-  create: (ctx) => ({
-    ImportDeclaration(node) {
+  create: (ctx: any) => ({
+    ImportDeclaration(node: any) {
       if (
         !isInternalImport(node.source.value) ||
         path.basename(node.source.value).includes(".")
@@ -46,7 +38,12 @@ export const esmExtensions = createRule({
 
       ctx.report({
         messageId: "no-dot-js",
-        fix: fix(node),
+        fix: (fixer: any) => {
+          const range = [...node.source.range] as [number, number]
+          range[1] -= 1
+
+          return fixer.insertTextAfterRange(range, ".js")
+        },
         loc: {
           start: {
             line: node.source.loc.start.line,

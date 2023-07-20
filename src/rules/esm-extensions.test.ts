@@ -1,3 +1,4 @@
+// @ts-ignore: Broken types
 import { RuleTester } from "@typescript-eslint/rule-tester"
 
 import { esmExtensions } from "./esm-extensions"

@@ -44,7 +44,7 @@ dependencies:
 
 devDependencies:
   '@beequeue/eslint-plugin':
-    specifier: 'link:'
+    specifier: link:.
     version: 'link:'
   '@changesets/changelog-github':
     specifier: 0.4.8
