@@ -1,5 +1,15 @@
 # @beequeue/eslint-plugin
 
+## 3.0.0
+
+### Major Changes
+
+- [#49](https://github.com/BeeeQueue/eslint-plugin/pull/49) [`654a964`](https://github.com/BeeeQueue/eslint-plugin/commit/654a9646578e8228e5867d31e000810755600896) - Updated TS plugin to v6 with new recommended rules
+
+- [#49](https://github.com/BeeeQueue/eslint-plugin/pull/49) [`654a964`](https://github.com/BeeeQueue/eslint-plugin/commit/654a9646578e8228e5867d31e000810755600896) - Upgraded prettier to v3
+
+- [#49](https://github.com/BeeeQueue/eslint-plugin/pull/49) [`654a964`](https://github.com/BeeeQueue/eslint-plugin/commit/654a9646578e8228e5867d31e000810755600896) - Updated minimum ESLint version to `^8.45.0`
+
 ## 2.1.1
 
 ### Patch Changes
