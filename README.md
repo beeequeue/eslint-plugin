@@ -8,6 +8,7 @@ My extensive, opinionated ESLint configs.
 Modular config presets that can be mixed and matched!
 
 - [Config base (JS)](./src/config/base.ts): `plugin:@beequeue/base`
+- [ESM](./src/config/esm.ts): `plugin:@beequeue/esm`
 - [TypeScript](./src/config/typescript.ts): `plugin:@beequeue/typescript`
 - [Node](./src/config/node.ts): `plugin:@beequeue/node`
 - [React](./src/config/react.ts): `plugin:@beequeue/react`
