@@ -1,5 +1,11 @@
 # @beequeue/eslint-plugin
 
+## 3.0.1
+
+### Patch Changes
+
+- [`f0418f7`](https://github.com/BeeeQueue/eslint-plugin/commit/f0418f73bba8a7aea56acc1103833da532df3dd8) - Fix invalid rule in `vue` preset
+
 ## 3.0.0
 
 ### Major Changes

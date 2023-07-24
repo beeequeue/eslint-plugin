@@ -1,6 +1,6 @@
 {
   "name": "@beequeue/eslint-plugin",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "My opinionated, modular ESLint configs",
   "author": "BeeeQueue",
   "license": "MIT",
