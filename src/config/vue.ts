@@ -31,7 +31,7 @@ export const vue = {
     "vue/define-props-declaration": "error",
     "vue/define-emits-declaration": "error",
     /** Require strict types on refs */
-    "vue/require-typed-ref ": "error",
+    "vue/require-typed-ref": "error",
 
     /* Style rules */
 

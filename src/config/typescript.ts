@@ -63,8 +63,8 @@ export const typescript = {
         "@typescript-eslint/consistent-type-exports": "off",
         /** Don't warn on implicit function returns */
         "@typescript-eslint/explicit-module-boundary-types": "off",
-        /** Don't allow unions or intersections with types that ruin them (any, unknown, etc.) */
-        "@typescript-eslint/no-redundant-type-constituents": "error",
+        /** Allow unions or intersections with types that ruin them (any, unknown, etc.), it be used for enhancing IDE behavior */
+        "@typescript-eslint/no-redundant-type-constituents": "off",
         /** Enforce using shorter Map constructor syntax */
         "@typescript-eslint/consistent-generic-constructors": "error",
         /** Require explanations for @ts-ignore:s */
