@@ -16,7 +16,7 @@ jobs:
       - uses: BeeeQueue/setup-node@corepack
         with:
           corepack: true
-          node-version: 16
+          node-version: 18
 
       - name: find pnpm cache path
         id: cache
@@ -45,7 +45,7 @@ jobs:
       - uses: BeeeQueue/setup-node@corepack
         with:
           corepack: true
-          node-version: 16
+          node-version: 18
       - name: find pnpm cache path
         id: cache
         run: echo "path=$(pnpm store path)" >> $GITHUB_OUTPUT
@@ -71,7 +71,7 @@ jobs:
       - uses: BeeeQueue/setup-node@corepack
         with:
           corepack: true
-          node-version: 16
+          node-version: 18
       - name: find pnpm cache path
         id: cache
         run: echo "path=$(pnpm store path)" >> $GITHUB_OUTPUT
@@ -97,7 +97,7 @@ jobs:
       - uses: BeeeQueue/setup-node@corepack
         with:
           corepack: true
-          node-version: 16
+          node-version: 18
 
       - name: find pnpm cache path
         id: cache
