@@ -1,5 +1,11 @@
 # @beequeue/eslint-plugin
 
+## 4.0.0
+
+### Major Changes
+
+- [#52](https://github.com/BeeeQueue/eslint-plugin/pull/52) [`0ae8926`](https://github.com/BeeeQueue/eslint-plugin/commit/0ae89268a65b445727c9729d6045e4969066c5b6) - Updated dependencies
+
 ## 3.0.1
 
 ### Patch Changes
