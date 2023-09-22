@@ -18,7 +18,7 @@ jobs:
       - uses: BeeeQueue/setup-node@corepack
         with:
           corepack: true
-          node-version: 18
+          node-version: 20
 
       - uses: actions/cache@v3
         with:
