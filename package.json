@@ -16,9 +16,9 @@
   ],
   "repository": "github:BeeeQueue/eslint-plugin",
   "bugs": "https://github.com/BeeeQueue/eslint-plugin/issues",
-  "packageManager": "pnpm@8.6.0",
+  "packageManager": "pnpm@8.7.6",
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -52,35 +52,51 @@
     }
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "6.1.0",
-    "@typescript-eslint/parser": "6.1.0",
-    "@typescript-eslint/utils": "6.1.0",
-    "eslint-config-prettier": "8.8.0",
-    "eslint-import-resolver-typescript": "3.5.5",
+    "@typescript-eslint/eslint-plugin": "6.7.2",
+    "@typescript-eslint/parser": "6.7.2",
+    "@typescript-eslint/utils": "6.7.2",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-import-resolver-typescript": "3.6.1",
     "eslint-plugin-import": "npm:eslint-plugin-i@2.27.5-4",
     "eslint-plugin-jsx-a11y": "6.7.1",
-    "eslint-plugin-n": "16.0.1",
+    "eslint-plugin-n": "16.1.0",
     "eslint-plugin-prettier": "5.0.0",
-    "eslint-plugin-react": "7.33.0",
-    "eslint-plugin-unicorn": "48.0.0",
-    "eslint-plugin-vue": "9.15.1"
+    "eslint-plugin-react": "7.33.2",
+    "eslint-plugin-unicorn": "48.0.1",
+    "eslint-plugin-vue": "9.17.0"
   },
   "devDependencies": {
-    "@beequeue/eslint-plugin": "link:.",
+    "@beequeue/eslint-plugin": "link:",
     "@changesets/changelog-github": "0.4.8",
-    "@changesets/cli": "2.26.1",
-    "@tsconfig/node16": "1.0.4",
-    "@tsconfig/strictest": "2.0.1",
-    "@types/eslint": "8.44.0",
-    "@types/node": "16.18.38",
-    "@typescript-eslint/rule-tester": "6.1.0",
-    "eslint": "8.45.0",
-    "eslint-define-config": "1.21.0",
-    "lint-staged": "13.2.3",
-    "prettier": "3.0.0",
-    "simple-git-hooks": "2.8.1",
-    "type-fest": "4.0.0",
-    "typescript": "5.1.6",
-    "vitest": "0.33.0"
+    "@changesets/cli": "2.26.2",
+    "@tsconfig/node20": "20.1.2",
+    "@tsconfig/strictest": "2.0.2",
+    "@types/eslint": "8.44.2",
+    "@types/node": "20.6.3",
+    "@typescript-eslint/rule-tester": "6.7.2",
+    "eslint": "8.50.0",
+    "eslint-define-config": "1.23.0",
+    "lint-staged": "14.0.1",
+    "prettier": "3.0.3",
+    "simple-git-hooks": "2.9.0",
+    "type-fest": "4.3.1",
+    "typescript": "5.2.2",
+    "vitest": "0.34.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "array-includes": "npm:@nolyfill/array-includes@latest",
+      "array.prototype.flat": "npm:@nolyfill/array.prototype.flat@latest",
+      "array.prototype.flatmap": "npm:@nolyfill/array.prototype.flatmap@latest",
+      "array.prototype.tosorted": "npm:@nolyfill/array.prototype.tosorted@latest",
+      "has": "npm:@nolyfill/has@latest",
+      "object.assign": "npm:@nolyfill/object.assign@latest",
+      "object.entries": "npm:@nolyfill/object.entries@latest",
+      "object.fromentries": "npm:@nolyfill/object.fromentries@latest",
+      "object.hasown": "npm:@nolyfill/object.hasown@latest",
+      "object.values": "npm:@nolyfill/object.values@latest",
+      "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@latest",
+      "es-iterator-helpers": "npm:@nolyfill/es-iterator-helpers@latest"
+    }
   }
 }
