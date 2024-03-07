@@ -21,6 +21,7 @@ export const node = {
     "n/no-path-concat": "error",
     /** Require using the promise API over the old callback based one */
     "n/prefer-promises/fs": "error",
+    "n/no-sync": ["warn", { allowAtRootLevel: true }],
   },
   overrides: [
     {
